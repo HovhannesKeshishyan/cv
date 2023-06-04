@@ -1,0 +1,19 @@
+.languages {
+    .language {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+        font-size: var(--font-size-md);
+        font-weight: var(--font-wight-bolder);
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .language_name {
+            color: var(--text-color-primary);
+        }
+        .language_level {
+            color: var(--text-color-primary-2);
+        }
+    }
+}

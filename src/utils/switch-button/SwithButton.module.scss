@@ -1,0 +1,28 @@
+.switch_button {
+  position: relative;
+  top: 28px;
+  display: flex;
+  width: 58px;
+  height: 28px;
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid #cecece;
+  border-radius: 15px;
+  user-select: none;
+  margin: 0 0 0 auto;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    width: 24px;
+    height: 24px;
+    transition: right 0.3s linear;
+  }
+}
+
+.dark_theme.switch_button {
+  img {
+    right: 0;
+  }
+}

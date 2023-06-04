@@ -1,0 +1,28 @@
+.education {
+  font-weight: var(--font-wight-bolder);
+  p {
+    font-size: var(--font-size-md-bigger);
+    width: 75%;
+    margin-top: 25px;
+  }
+
+  .proff {
+    color: var(--text-color-primary);
+  }
+
+  .college {
+    color: var(--text-color-primary-2);
+  }
+
+  .graduate_year {
+    color: var(--text-color-secendary);
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .education {
+    p {
+      font-size: var(--font-size-md);
+    }
+  }
+}

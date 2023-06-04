@@ -1,0 +1,78 @@
+@import "typeface-roboto";
+
+:root {
+  --app-green: #45beaa;
+  --app-black: #000;
+  --app-white: #fff;
+
+  --header-bg: #3294e2;
+  --footer-bg: #1e3a50;
+  --body-bg: #525659;
+  --main-bg-color: var(--app-white);
+  --section-title-color: var(--app-black);
+
+  // --text-color-primary: #0b9de8;
+  --text-color-primary: #0479b4;
+  --text-color-primary-2: var(--app-black);
+  --text-color-secendary: #808080;
+
+  --font-size-extra-big: 4.8rem;
+  --font-size-big: 3.2rem;
+  --font-size-md-bigger: 2.9rem;
+  --font-size-md: 2.4rem;
+  --font-size-md-smaller: 1.8rem;
+  --font-size-sm: 1.2rem;
+
+  --font-wight-bolder: 700;
+
+  //screen
+  --screen-sm: 510px;
+  --screen-md: 720px;
+  --screen-lg: 1200px;
+}
+
+.app-dark-theme {
+  --header-bg: #057267;
+  --footer-bg: #057267;
+  --text-color-primary: var(--app-green);
+  --main-bg-color: var(--app-black);
+  --section-title-color: var(--app-white);
+  --text-color-primary-2: var(--app-white);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: var(--body-bg);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  #root {
+    padding: 0;
+  }
+}
+
+h2.app-section-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-wight-bolder);
+  color: var(--section-title-color);
+  margin-bottom: 50px;
+}

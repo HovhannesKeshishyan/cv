@@ -1,0 +1,39 @@
+.skills_list {
+  .skills_list_column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .skill_item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      .skill_name {
+        font-size: var(--font-size-big);
+        font-weight: var(--font-wight-bolder);
+        color: var(--text-color-primary);
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills_list {
+    .skills_list_column {
+      .skill_item {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        .skill_name {
+          font-size: var(--font-size-md);
+        }
+      }
+    }
+  }
+}

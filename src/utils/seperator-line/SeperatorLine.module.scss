@@ -1,0 +1,14 @@
+.seperator_line_wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 50px 0;
+  height: 30px;
+  .seperator_line {
+    background-color: var(--text-color-primary);
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
