@@ -7,7 +7,7 @@ export const EducattionInfo: React.FC = () => {
       <h2 className="app-section-title">Education</h2>
       <p className={styles.proff}>Programming</p>
       <p className={styles.college}>Abovyan State Energy College</p>
-      <p className={styles.graduate_year}>2014</p>
+      <p className={styles.graduate_year}>2013</p>
     </div>
   );
 };
