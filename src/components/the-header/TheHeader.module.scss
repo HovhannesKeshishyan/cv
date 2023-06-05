@@ -6,6 +6,7 @@ header,
   align-items: flex-start;
   padding: 50px;
   background-color: var(--header-bg);
+  transition: var(--app-theme-transition);
 
   .image_container {
     background-color: var(--app-white);

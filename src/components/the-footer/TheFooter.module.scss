@@ -6,6 +6,7 @@ footer,
   height: 150px;
   background-color: var(--footer-bg);
   padding: 0 5% 0 0;
+  transition: var(--app-theme-transition);
 
   .social_media {
     display: flex;

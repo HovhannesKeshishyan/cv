@@ -2,4 +2,5 @@ main,
 .main {
   padding: 0 10%;
   background-color: var(--main-bg-color);
+  transition: var(--app-theme-transition);
 }

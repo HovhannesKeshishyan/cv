@@ -1,5 +1,5 @@
 import React from "react";
-import AuthorImage from "@/assets/author.png";
+import AuthorImage from "@/assets/author-300x300.png";
 import styles from "./TheHeader.module.scss";
 
 export const TheHeader: React.FC = () => {
