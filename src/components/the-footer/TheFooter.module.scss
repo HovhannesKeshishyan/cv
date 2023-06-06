@@ -15,13 +15,19 @@ footer,
     height: 100%;
     margin: 0 0 0 10%;
 
-    img {
+    svg {
       width: 40px;
       height: 40px;
+      fill: #fff;
+      transition: fill 0.2s linear;
+      &:hover {
+        fill: gold;
+      }
     }
   }
 
   .copyrighting {
+    font-size: var(--font-size-md-smaller);
     align-self: center;
     color: var(--app-white);
   }
@@ -30,9 +36,21 @@ footer,
 @media only screen and (max-width: 720px) {
   footer, .footer {
     .social_media {
-      img {
+      svg {
         width: 30px;
         height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  footer, .footer {
+    .social_media {
+      gap: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
   }

@@ -1,30 +1,27 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styles from "./TheFooter.module.scss";
-import LinkedinIcon from "@/assets/icons/social-media/linkedin.png";
-import FacebookIcon from "@/assets/icons/social-media/facebook.png";
+import { LinkedinIcon } from "../svg-icons/LinkedinIcon";
+import { FacebookIcon } from "../svg-icons/FacebookIcon";
+import { GitHubIcon } from "../svg-icons/GitHubIcon";
+import { IRootState } from "../../store";
 
 export const TheFooter: React.FC = () => {
-  const social_media_data = [
-    {
-      name: "linkedin",
-      href: "https://www.linkedin.com/in/hovhannes-keshishyan",
-      img_src: LinkedinIcon,
-      alt_text: "Linkedin icon",
-    },
-    {
-      name: "facebook",
-      href: "https://www.facebook.com/HovoKeshishyan",
-      img_src: FacebookIcon,
-      alt_text: "Facebook icon",
-    },
-  ];
+  const social_medias = useSelector((state: IRootState) => state.author.social);
+  const icons: { [key: string]: React.FC } = {
+    linkedin: LinkedinIcon,
+    github: GitHubIcon,
+    facebook: FacebookIcon,
+  };
+
   return (
     <footer>
       <div className={styles.social_media}>
-        {social_media_data.map((social_media) => {
+        {social_medias.map((social_media) => {
+          const SocialIcon = icons[social_media.name];
           return (
             <a href={social_media.href} target="_blank" key={social_media.name}>
-              <img src={social_media.img_src} alt={social_media.alt_text} />
+              <SocialIcon />
             </a>
           );
         })}
