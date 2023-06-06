@@ -23,7 +23,7 @@ export const TheFooter: React.FC = () => {
             <a
               href={social_media.href}
               target="_blank"
-              area-label={social_media.name}
+              area-label={`${social_media.name} link`}
               key={social_media.name}
             >
               <SocialIcon />
