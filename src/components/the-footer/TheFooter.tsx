@@ -20,7 +20,12 @@ export const TheFooter: React.FC = () => {
         {social_medias.map((social_media) => {
           const SocialIcon = icons[social_media.name];
           return (
-            <a href={social_media.href} target="_blank" key={social_media.name}>
+            <a
+              href={social_media.href}
+              target="_blank"
+              area-label={social_media.name}
+              key={social_media.name}
+            >
               <SocialIcon />
             </a>
           );
