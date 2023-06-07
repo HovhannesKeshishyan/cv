@@ -13,7 +13,6 @@ import GitIcon from "@/assets/icons/skills/git.png";
 import PhotoshopIcon from "@/assets/icons/skills/photoshop.png";
 import FigmaIcon from "@/assets/icons/skills/figma.png";
 import ArticulateStorylineIcon from "@/assets/icons/skills/articulate_storyline.png";
-import { TwoColumns } from "../../utils/the-columns/TwoColumns";
 import { useSplitArrayToTwoParts } from "../../hooks/useSplitArraytoTwoParts";
 
 const SKILLS = [
