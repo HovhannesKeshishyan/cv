@@ -49,10 +49,10 @@ export const SkillsList: React.FC = () => {
   return (
     <div className={styles.skills_list}>
       <h2 className="app-section-title">Skills</h2>
-      <TwoColumns columns_breackpoint={600}>
+      <div className={styles.skills_container}>
         <div className={styles.skills_list_column}>{first_column_items}</div>
         <div className={styles.skills_list_column}>{second_column_items}</div>
-      </TwoColumns>
+      </div>
     </div>
   );
 };
