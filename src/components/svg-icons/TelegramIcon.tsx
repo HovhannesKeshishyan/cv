@@ -11,6 +11,8 @@ export const TelegramIcon: React.FC = () => {
       fillRule="evenodd"
       clipRule="evenodd"
       strokeLinejoin="round"
+      aria-label="Telegram Icon"
+      role="img"
     >
       <path
         id="telegram-4"
