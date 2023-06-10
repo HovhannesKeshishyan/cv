@@ -28,6 +28,17 @@ header,
     margin-bottom: 20px;
     text-align: center;
   }
+
+  .current_job_block {
+    h2 {
+      color: var(--app-white);
+      font-size: var(--font-size-big);
+      font-weight: var(--font-wight-bolder);
+      font-style: italic;
+      margin: 0;
+      text-align: center;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -66,16 +77,11 @@ header,
     h1 {
       font-size: var(--font-size-md);
     }
-  }
-}
 
-.current_job_block {
-  h2 {
-    color: var(--app-white);
-    font-size: var(--font-size-big);
-    font-weight: var(--font-wight-bolder);
-    font-style: italic;
-    margin: 0;
-    text-align: center;
+    .current_job_block {
+      h2 {
+        font-size: var(--font-size-md);
+      }
+    }
   }
 }

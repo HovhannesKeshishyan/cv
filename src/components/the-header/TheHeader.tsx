@@ -1,12 +1,29 @@
 import React from "react";
-import AuthorImage from "@/assets/author-300x300.png";
+import AuthorImagePNG from "@/assets/author-300x300.png";
+import AuthorImageWebP from "@/assets/author-300x300.webp";
+import AuthorImageWebPSmall from "@/assets/author-150x150.webp";
 import styles from "./TheHeader.module.scss";
 
 export const TheHeader: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.image_container}>
-        <img src={AuthorImage} alt="Author image" />
+        <picture>
+          <source
+            media="(max-width: 720px)"
+            srcSet={AuthorImageWebPSmall}
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 720px)"
+            srcSet={AuthorImageWebP}
+            type="image/webp"
+          />
+          <source srcSet={AuthorImagePNG} type="image/png" />
+          <img src={AuthorImagePNG} alt="Author image" />
+        </picture>
+
+        {/* <img src={AuthorImagePNG} alt="Author image" /> */}
       </div>
       <div className={styles.contact_info}>
         <div className={styles.full_name_container}>
