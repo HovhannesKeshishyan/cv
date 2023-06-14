@@ -1,13 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 import styles from "./TheFooter.module.scss";
 import { LinkedinIcon } from "../svg-icons/LinkedinIcon";
 import { FacebookIcon } from "../svg-icons/FacebookIcon";
 import { GitHubIcon } from "../svg-icons/GitHubIcon";
-import { IRootState } from "../../store";
 
 export const TheFooter: React.FC = () => {
-  const social_medias = useSelector((state: IRootState) => state.author.social);
+  const social_medias = useTypedSelector(state => state.author.social);
   const icons: { [key: string]: React.FC } = {
     linkedin: LinkedinIcon,
     github: GitHubIcon,

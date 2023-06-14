@@ -4,7 +4,7 @@ import { IAuthorSliceState } from "./author-slice-types";
 const initialState: IAuthorSliceState = {
   name: "Hovhannes",
   last_name: "Keshishyan",
-  birth: new Date("02/17/1991"),
+  birth: new Date("02/17/1991").toString(),
   social: [
     {
       name: "linkedin",

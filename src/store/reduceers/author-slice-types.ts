@@ -6,7 +6,7 @@ export interface ISocialMedia {
 export interface IAuthorSliceState {
   name: string;
   last_name: string;
-  birth: Date;
+  birth: string;
 
   social: ISocialMedia[];
 }
