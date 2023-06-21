@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IAppMainSliceState } from "./app-main-slice-types";
+import { IAppMainSliceState } from "./types";
 
 const selected_theme = localStorage.getItem("selected_theme");
 const initialState: IAppMainSliceState = {

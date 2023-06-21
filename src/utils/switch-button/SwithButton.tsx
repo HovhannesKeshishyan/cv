@@ -3,7 +3,7 @@ import { useTypedDispatch } from "../../hooks/useTypedDispatch";
 import styles from "./SwithButton.module.scss";
 import SunIcon from "@/assets/icons/sun.svg";
 import MoonIcon from "@/assets/icons/moon.svg";
-import { toggleTheme } from "../../store/reduceers/app-main-slice";
+import { toggleTheme } from "../../store/reduceers/app-main/app-main-slice";
 
 interface ISwithButtonProps {
   theme: string;
