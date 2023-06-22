@@ -20,6 +20,9 @@
 
     .year {
       color: var(--text-color-secendary);
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
   }
 }

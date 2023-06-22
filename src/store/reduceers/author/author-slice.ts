@@ -5,38 +5,38 @@ const EXPERIENCES: IExperiences[] = [
   {
     id: "egs",
     company: "Energize Global Services Armenia",
-    year: { from: "2023 April", to: "Present" },
+    year: { from: "2023-04-17", to: "Present" },
     role: "Frontend developer",
   },
   {
     id: "willing",
     company: "Willing and Able LLC",
-    year: { from: "2020 December", to: "2023 April" },
+    year: { from: "2020-12-09", to: "2023-04-14" },
     role: "Frontend developer",
   },
   {
     id: "compass_2",
     company: "Compass LLC",
-    year: { from: "2019 August", to: "2020 September" },
+    year: { from: "2019-08-01", to: "2020-09-01" },
     role: "Frontend developer",
   },
   {
     id: "compass_1",
     company: "Compass LLC",
-    year: { from: "2017 July", to: "2019 August" },
+    year: { from: "2017-07-01", to: "2019-08-01" },
     role: "Articulate Storyline developer",
   },
   {
     id: "stuyg",
     company: "Stuyg LLC",
-    year: { from: "2014 April", to: "2016 October" },
+    year: { from: "2014-04-01", to: "2016-10-01" },
     role: "Accountant",
     hide: true
   },
   {
     id: "mag",
     company: "M.A.G. Shinanyut LLC",
-    year: { from: "2012 August", to: "2013 August" },
+    year: { from: "2012-08-01", to: "2013-08-01" },
     role: "Accountant",
     hide: true
   },

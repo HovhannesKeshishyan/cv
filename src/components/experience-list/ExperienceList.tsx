@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./ExperienceList.module.scss";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { ExperienceDuration } from "../experience-duration/ExperienceDuration";
+import { getExperiencePeriod } from "../../services/helpers";
+
 
 export const ExperienceList: React.FC = () => {
   let experiences = useTypedSelector((state) => state.author.experiences);
@@ -11,9 +14,12 @@ export const ExperienceList: React.FC = () => {
       <div className={styles.experience} key={experience.id}>
         <div className={styles.role}>{experience.role}</div>
         <div className={styles.company_name}>{experience.company}</div>
-        <div
-          className={styles.year}
-        >{`${experience.year.from} - ${experience.year.to}`}</div>
+        <div className={styles.year}>
+          <span>
+            {getExperiencePeriod(experience.year.from, experience.year.to)}
+          </span>
+          <ExperienceDuration experience={experience} />          
+        </div>
       </div>
     );
   });
