@@ -23,7 +23,7 @@ const EXPERIENCES: IExperiences[] = [
   {
     id: "compass_1",
     company: "Compass LLC",
-    year: { from: "2017-07-01", to: "2019-08-01" },
+    year: { from: "2017-08-01", to: "2019-08-01" },
     role: "Articulate Storyline developer",
   },
   {
