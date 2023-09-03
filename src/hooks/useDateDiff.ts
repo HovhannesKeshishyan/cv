@@ -26,8 +26,8 @@ export const useDateDiff = (from: string, to: string) => {
 const getToday = () => {
   const todayObj = DateTime.local();
   const { day, month, year } = todayObj;
-  const day_string = day < 9 ? "0" + day : day.toString();
-  const month_string = month < 9 ? "0" + month : month.toString();
+  const day_string = day < 10 ? "0" + day : day.toString();
+  const month_string = month < 10 ? "0" + month : month.toString();
   const year_string = year.toString();
   return DateTime.fromISO(`${year_string}-${month_string}-${day_string}`);
 };
