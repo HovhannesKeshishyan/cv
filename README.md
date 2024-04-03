@@ -33,6 +33,11 @@ npm run serve
 npm run build
 ```
 
+### Live Demo
+
+[https://hovhannes-keshishyan-cv.netlify.app](https://hovhannes-keshishyan-cv.netlify.app).
+
+
 ### Github URL
 
 [https://github.com/Hovhannes1991/cv-react](https://github.com/Hovhannes1991/cv-react).
