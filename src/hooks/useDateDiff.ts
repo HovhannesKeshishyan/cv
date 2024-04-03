@@ -8,8 +8,14 @@ export const useDateDiff = (from: string, to: string) => {
     const toDate =
       to.toLowerCase() === "present" ? getToday() : DateTime.fromISO(to);
     const diff = toDate.diff(fromDate, ["years", "months"]);
-    const years = diff.years;
-    const months = Math.round(diff.months);
+    let years = diff.years;
+    let months = Math.round(diff.months);
+
+    //when mounths rounded to top and get 12
+    if(months === 12) {
+      years++;
+      months = 0;
+    }
 
     const years_str = years > 1 ? "years" : "year";
     const months_str = months > 1 ? "months" : "month";
