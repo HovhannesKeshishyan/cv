@@ -1,21 +1,22 @@
 import React, { useMemo } from "react";
 import styles from "./SkillsList.module.scss";
 
-import JavaScriptIcon from "@/assets/icons/skills/javascript.png";
-import VueIcon from "@/assets/icons/skills/vue.png";
-import ReactIcon from "@/assets/icons/skills/react.png";
-import ReduxIcon from "@/assets/icons/skills/redux.png";
-import NodejsIcon from "@/assets/icons/skills/nodejs.png";
-import MongoDBIcon from "@/assets/icons/skills/mongodb.png";
-import TypeScriptIcon from "@/assets/icons/skills/typescript.png";
-import HTMLIcon from "@/assets/icons/skills/html.png";
-import CSSIcon from "@/assets/icons/skills/css.png";
-import SASSIcon from "@/assets/icons/skills/sass.png";
-import LessIcon from "@/assets/icons/skills/less.png";
-import GitIcon from "@/assets/icons/skills/git.png";
-import PhotoshopIcon from "@/assets/icons/skills/photoshop.png";
-import FigmaIcon from "@/assets/icons/skills/figma.png";
-import ArticulateStorylineIcon from "@/assets/icons/skills/articulate_storyline.png";
+import JavaScriptIcon from "@/assets/icons/skills/svg/JavaScript.svg";
+import VueIcon from "@/assets/icons/skills/svg/Vue.svg";
+import ReactIcon from "@/assets/icons/skills/svg/React.svg";
+import ReduxIcon from "@/assets/icons/skills/svg/Redux.svg";
+import NodejsIcon from "@/assets/icons/skills/svg/NodeJS.svg";
+import MongoDBIcon from "@/assets/icons/skills/svg/MongoDB.svg";
+import TypeScriptIcon from "@/assets/icons/skills/svg/TypeScript.svg";
+import WebpackIcon from "@/assets/icons/skills/svg/Webpack.svg";
+import HTMLIcon from "@/assets/icons/skills/svg/HTML.svg";
+import CSSIcon from "@/assets/icons/skills/svg/CSS.svg";
+import SASSIcon from "@/assets/icons/skills/svg/SASS.svg";
+import LessIcon from "@/assets/icons/skills/svg/LESS.svg";
+import GitIcon from "@/assets/icons/skills/svg/GIT.svg";
+import PhotoshopIcon from "@/assets/icons/skills/svg/photoshop.svg";
+import FigmaIcon from "@/assets/icons/skills/svg/figma.svg";
+import ArticulateStorylineIcon from "@/assets/icons/skills/svg/ArticulateStoryline.svg";
 
 import { useSplitArrayToTwoParts } from "../../hooks/useSplitArraytoTwoParts";
 
@@ -27,6 +28,7 @@ const SKILLS = [
   { name: "Node.js", level: "", icon: NodejsIcon },
   { name: "MongoDB", level: "", icon: MongoDBIcon },
   { name: "TypeScript", level: "", icon: TypeScriptIcon },
+  { name: "Webpack", level: "", icon: WebpackIcon },
   { name: "HTML", level: "", icon: HTMLIcon },
   { name: "CSS", level: "", icon: CSSIcon },
   { name: "SASS/SCSS", level: "", icon: SASSIcon },
