@@ -14,8 +14,8 @@ import CSSIcon from "@/assets/icons/skills/svg/CSS.svg";
 import SASSIcon from "@/assets/icons/skills/svg/SASS.svg";
 import LessIcon from "@/assets/icons/skills/svg/LESS.svg";
 import GitIcon from "@/assets/icons/skills/svg/GIT.svg";
-import PhotoshopIcon from "@/assets/icons/skills/svg/photoshop.svg";
-import FigmaIcon from "@/assets/icons/skills/svg/figma.svg";
+import PhotoshopIcon from "@/assets/icons/skills/svg/Photoshop.svg";
+import FigmaIcon from "@/assets/icons/skills/svg/Figma.svg";
 import ArticulateStorylineIcon from "@/assets/icons/skills/svg/ArticulateStoryline.svg";
 
 import { useSplitArrayToTwoParts } from "../../hooks/useSplitArraytoTwoParts";
