@@ -1,3 +1,5 @@
+import {TSvgIconName} from "@/utils/svg-icon/SvgIcon.tsx";
+
 export interface IContacts {
   email: string;
   phone: string;
@@ -7,7 +9,7 @@ export interface IContacts {
 }
 
 export interface ISocialMedia {
-  name: string;
+  name: TSvgIconName;
   href: string;
 }
 

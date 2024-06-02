@@ -19,33 +19,33 @@ import FigmaIcon from "@/assets/icons/skills/svg/Figma.svg";
 import ArticulateStorylineIcon from "@/assets/icons/skills/svg/ArticulateStoryline.svg";
 
 const ICONS_MAP = {
-  default_icon: DefaultSkillIcon,
-  javascript: JavaScriptIcon,
-  vue: VueIcon,
-  react: ReactIcon,
-  redux: ReduxIcon,
-  nodejs: NodejsIcon,
-  mongodb: MongoDBIcon,
-  typescript: TypeScriptIcon,
-  webpack: WebpackIcon,
-  html: HTMLIcon,
-  css: CSSIcon,
-  sass: SASSIcon,
-  less: LessIcon,
-  git: GitIcon,
-  photoshop: PhotoshopIcon,
-  figma: FigmaIcon,
-  articulate_storyline: ArticulateStorylineIcon,
+    default_icon: DefaultSkillIcon,
+    javascript: JavaScriptIcon,
+    vue: VueIcon,
+    react: ReactIcon,
+    redux: ReduxIcon,
+    nodejs: NodejsIcon,
+    mongodb: MongoDBIcon,
+    typescript: TypeScriptIcon,
+    webpack: WebpackIcon,
+    html: HTMLIcon,
+    css: CSSIcon,
+    sass: SASSIcon,
+    less: LessIcon,
+    git: GitIcon,
+    photoshop: PhotoshopIcon,
+    figma: FigmaIcon,
+    articulate_storyline: ArticulateStorylineIcon
 };
 
-export type TSvgIconName = keyof typeof ICONS_MAP;
+export type TImgSvgIconName = keyof typeof ICONS_MAP;
 
 interface IProps {
-  icon_name: TSvgIconName;
-  alt?: string;
+    icon_name: TImgSvgIconName;
+    alt?: string;
 }
 
-export const ImgSvgIcon: React.FC<IProps> = ({ icon_name, alt = "" }) => {
-  const SVG = ICONS_MAP[icon_name] || ICONS_MAP.default_icon;
-  return <img src={SVG} alt={alt} />;
+export const ImgSvgIcon: React.FC<IProps> = ({icon_name, alt = ""}) => {
+    const SVG = ICONS_MAP[icon_name] || ICONS_MAP.default_icon;
+    return <img src={SVG} alt={alt}/>;
 };

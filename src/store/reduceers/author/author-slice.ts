@@ -67,6 +67,10 @@ const SOCIAL_MEDIA: ISocialMedia[] = [
     name: "facebook",
     href: "https://www.facebook.com/HovoKeshishyan",
   },
+  {
+    name: "twitter",
+    href: "https://twitter.com/hovo1991",
+  },
 ];
 
 const initialState: IAuthorSliceState = {

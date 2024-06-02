@@ -1,14 +1,14 @@
 import React, { useMemo } from "react";
 import styles from "./SkillsList.module.scss";
 
-import type { TSvgIconName } from "@/utils/img-svg-icon/ImgSvgIcon";
+import type { TImgSvgIconName } from "@/utils/img-svg-icon/ImgSvgIcon";
 import { ImgSvgIcon } from "@/utils/img-svg-icon/ImgSvgIcon";
 import { useSplitArrayToTwoParts } from "../../hooks/useSplitArraytoTwoParts";
 
 interface ISkill {
   name: string;
   level: string;
-  icon: TSvgIconName;
+  icon: TImgSvgIconName;
 }
 
 const SKILLS: ISkill[] = [
