@@ -8,12 +8,6 @@
 Hovhannes Keshishyan
 ```
 
-### Project tested on
-
-```
-Node - 20.9.0
-NPM - 9.3.1
-```
 
 ## Project setup
 
@@ -24,13 +18,25 @@ npm install
 ### Compiles and hot-reloads for development
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 
 ```
 npm run build
+```
+
+### Linting
+
+```
+npm run lint
+```
+
+### Technologies
+
+```
+React, Redux, TypeScript
 ```
 
 ### Live Demo
