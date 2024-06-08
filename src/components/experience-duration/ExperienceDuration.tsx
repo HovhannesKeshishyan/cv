@@ -1,6 +1,6 @@
 import React from "react";
-import { IExperience } from "../../store/reduceers/author/types";
-import { useDateDiff } from "../../hooks/useDateDiff";
+import { IExperience } from "@/store/reduceers/author/types.ts";
+import { useDateDiff } from "@/hooks/useDateDiff.ts";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import InfoIcon from "@/assets/icons/info.svg";
 import styles from "./ExperienceDuration.module.scss";
