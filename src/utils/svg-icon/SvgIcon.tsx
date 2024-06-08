@@ -1,10 +1,10 @@
 import React from "react";
-import {LinkedinIcon} from "@/components/svg-icons/social/LinkedinIcon.tsx";
-import {FacebookIcon} from "@/components/svg-icons/social/FacebookIcon.tsx";
-import {GitHubIcon} from "@/components/svg-icons/social/GitHubIcon.tsx";
-import {TwitterIcon} from "@/components/svg-icons/social/TwitterIcon.tsx";
+import {LinkedinIcon} from "@/utils/svg-icons/social/LinkedinIcon.tsx";
+import {FacebookIcon} from "@/utils/svg-icons/social/FacebookIcon.tsx";
+import {GitHubIcon} from "@/utils/svg-icons/social/GitHubIcon.tsx";
+import {TwitterIcon} from "@/utils/svg-icons/social/TwitterIcon.tsx";
 
-import {ToggleArrowIcon} from "@/components/svg-icons/utils/ToggleArrow.tsx";
+import {ToggleArrowIcon} from "@/utils/svg-icons/utils/ToggleArrow.tsx";
 
 const SOCIAL_ICONS = {
     linkedin: LinkedinIcon,

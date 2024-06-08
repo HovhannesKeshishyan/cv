@@ -1,15 +1,15 @@
 import React from "react";
 import { useTypedDispatch } from "../../hooks/useTypedDispatch";
-import styles from "./SwithButton.module.scss";
+import styles from "./SwitchButton.module.scss";
 import SunIcon from "@/assets/icons/sun.svg";
 import MoonIcon from "@/assets/icons/moon.svg";
 import { toggleTheme } from "../../store/reduceers/app-main/app-main-slice";
 
-interface ISwithButtonProps {
+interface ISwitchButtonProps {
   theme: string;
 }
 
-export const SwithButton: React.FC<ISwithButtonProps> = (props) => {
+export const SwitchButton: React.FC<ISwitchButtonProps> = (props) => {
   const dispatch = useTypedDispatch();
   const isLight = props.theme === "light";
   const changeTheme = () => {    
