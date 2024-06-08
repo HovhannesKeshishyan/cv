@@ -22,7 +22,7 @@ export interface IExperience {
   company: string;
   year: { from: string; to: string };
   role: string;
-  technologies: string[];
+  technologies: TTechnology[];
   projects: IProject[];
   hide?: boolean;
 }
@@ -38,3 +38,6 @@ export interface IAuthorSliceState {
 
   social: ISocialMedia[];
 }
+
+
+export type TTechnology = "HTML" | "CSS" | "JavaScript" | "TypeScript" | "Vue" | "VUEX" | "Vue Router" | "React" | "Redux" | "Angular" | "Webpack" | "SASS" | "SCSS" | "LESS" | "Articulate Storyline"
