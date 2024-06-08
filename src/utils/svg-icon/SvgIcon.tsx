@@ -1,14 +1,25 @@
 import React from "react";
-import {LinkedinIcon} from "@/components/svg-icons/LinkedinIcon.tsx";
-import {FacebookIcon} from "@/components/svg-icons/FacebookIcon.tsx";
-import {GitHubIcon} from "@/components/svg-icons/GitHubIcon.tsx";
-import {TwitterIcon} from "@/components/svg-icons/TwitterIcon.tsx";
+import {LinkedinIcon} from "@/components/svg-icons/social/LinkedinIcon.tsx";
+import {FacebookIcon} from "@/components/svg-icons/social/FacebookIcon.tsx";
+import {GitHubIcon} from "@/components/svg-icons/social/GitHubIcon.tsx";
+import {TwitterIcon} from "@/components/svg-icons/social/TwitterIcon.tsx";
 
-const ICONS_MAP = {
+import {ToggleArrowIcon} from "@/components/svg-icons/utils/ToggleArrow.tsx";
+
+const SOCIAL_ICONS = {
     linkedin: LinkedinIcon,
     facebook: FacebookIcon,
     github: GitHubIcon,
     twitter: TwitterIcon
+}
+
+const UTILS_ICONS = {
+    toggle_arrow: ToggleArrowIcon
+}
+
+const ICONS_MAP = {
+    ...SOCIAL_ICONS,
+    ...UTILS_ICONS
 }
 
 export type TSvgIconName = keyof typeof ICONS_MAP;

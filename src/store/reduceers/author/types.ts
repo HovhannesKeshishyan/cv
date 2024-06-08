@@ -13,11 +13,17 @@ export interface ISocialMedia {
   href: string;
 }
 
-export interface IExperiences {
+interface IProject {
+  id: number;
+  description: string;
+}
+export interface IExperience {
   id: string;
   company: string;
   year: { from: string; to: string };
   role: string;
+  technologies: string[];
+  projects: IProject[];
   hide?: boolean;
 }
 
@@ -28,7 +34,7 @@ export interface IAuthorSliceState {
 
   contacts: IContacts;
 
-  experiences: IExperiences[];
+  experiences: IExperience[];
 
   social: ISocialMedia[];
 }

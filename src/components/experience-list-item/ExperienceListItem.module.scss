@@ -1,0 +1,26 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-wight-bolder);
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .role {
+    color: var(--text-color-primary);
+  }
+
+  .company_name {
+    color: var(--text-color-primary-2);
+  }
+
+  .year {
+    color: var(--text-color-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

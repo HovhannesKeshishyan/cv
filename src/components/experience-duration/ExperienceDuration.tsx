@@ -1,5 +1,5 @@
 import React from "react";
-import { IExperiences } from "../../store/reduceers/author/types";
+import { IExperience } from "../../store/reduceers/author/types";
 import { useDateDiff } from "../../hooks/useDateDiff";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import InfoIcon from "@/assets/icons/info.svg";
@@ -7,7 +7,7 @@ import styles from "./ExperienceDuration.module.scss";
 
 
 interface IExperienceDurationProp {
-  experience: IExperiences;
+  experience: IExperience;
 }
 
 export const ExperienceDuration: React.FC<IExperienceDurationProp> = ({
