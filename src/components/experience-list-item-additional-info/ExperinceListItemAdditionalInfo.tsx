@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from "./ExperienceListItemAdditionalInfo.module.scss";
 import {IExperience} from "@/store/reduceers/author/types.ts";
-import {SvgIcon} from "@/utils/svg-icon/SvgIcon.tsx";
+import {SvgIcon} from "@/components/svg-icon/SvgIcon.tsx";
 
 interface IProps {
     experience: IExperience;

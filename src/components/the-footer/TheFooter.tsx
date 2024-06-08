@@ -1,7 +1,7 @@
 import React from "react";
 import {useTypedSelector} from "@/hooks/useTypedSelector.ts";
 import styles from "./TheFooter.module.scss";
-import {SvgIcon} from "@/utils/svg-icon/SvgIcon.tsx";
+import {SvgIcon} from "@/components/svg-icon/SvgIcon.tsx";
 
 export const TheFooter: React.FC = () => {
     const social_medias = useTypedSelector(state => state.author.social);

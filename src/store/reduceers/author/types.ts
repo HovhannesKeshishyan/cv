@@ -1,4 +1,4 @@
-import {TSvgIconName} from "@/utils/svg-icon/SvgIcon.tsx";
+import {TSvgIconName} from "@/components/svg-icon/SvgIcon.tsx";
 
 export interface IContacts {
   email: string;
