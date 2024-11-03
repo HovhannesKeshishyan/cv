@@ -19,7 +19,7 @@ import FigmaIcon from "@/assets/icons/skills/svg/Figma.svg";
 import ArticulateStorylineIcon from "@/assets/icons/skills/svg/ArticulateStoryline.svg";
 
 const ICONS_MAP = {
-    default_icon: DefaultSkillIcon,
+    defaultIcon: DefaultSkillIcon,
     javascript: JavaScriptIcon,
     vue: VueIcon,
     react: ReactIcon,
@@ -35,7 +35,7 @@ const ICONS_MAP = {
     git: GitIcon,
     photoshop: PhotoshopIcon,
     figma: FigmaIcon,
-    articulate_storyline: ArticulateStorylineIcon
+    articulateStoryline: ArticulateStorylineIcon
 };
 
 export type TImgSvgIconName = keyof typeof ICONS_MAP;
@@ -46,6 +46,6 @@ interface IProps {
 }
 
 export const ImgSvgIcon: FC<IProps> = ({iconName, alt = ""}) => {
-    const SVG = ICONS_MAP[iconName] || ICONS_MAP.default_icon;
+    const SVG = ICONS_MAP[iconName] || ICONS_MAP.defaultIcon;
     return <img src={SVG} alt={alt}/>;
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MainContainer.module.scss";
 import { ContactsList } from "../contacts-list/ContactsList";
-import { SeperatorLine } from "../../utils/seperator-line/SeperatorLine";
+import { SeparatorLine } from "@/utils/separator-line/SeparatorLine.tsx";
 import { EducationInfo } from "../education-info/EducationInfo.tsx";
 import { TwoColumns } from "../../utils/the-columns/TwoColumns";
 import { ExperienceList } from "../experience-list/ExperienceList";
@@ -11,25 +11,25 @@ import { SkillsList } from "../skills-list/SkillsList";
 export const MainContainer: React.FC = () => {
   return (
     <main className={styles.main}>
-      <SeperatorLine />
+      <SeparatorLine />
 
       <TwoColumns>
         <ContactsList />
         <EducationInfo />
       </TwoColumns>
 
-      <SeperatorLine />
+      <SeparatorLine />
 
-      <TwoColumns columns_breackpoint={600}>
+      <TwoColumns columnsBreakpoint={600}>
         <ExperienceList />
         <LanguagesList />
       </TwoColumns>
 
-      <SeperatorLine />
+      <SeparatorLine />
 
       <SkillsList />
 
-      <SeperatorLine />
+      <SeparatorLine />
     </main>
   );
 };

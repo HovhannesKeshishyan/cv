@@ -27,7 +27,7 @@ const SKILLS: ISkill[] = [
     {name: "GIT", level: "", icon: "git"},
     {name: "Photoshop", level: "", icon: "photoshop"},
     {name: "Figma", level: "", icon: "figma"},
-    {name: "Articulate Storyline", level: "", icon: "articulate_storyline"},
+    {name: "Articulate Storyline", level: "", icon: "articulateStoryline"},
 ];
 
 export const SkillsList: FC = () => {

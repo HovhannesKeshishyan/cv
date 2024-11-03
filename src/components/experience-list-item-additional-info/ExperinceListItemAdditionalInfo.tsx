@@ -21,7 +21,7 @@ export const ExperienceListItemAdditionalInfo: React.FC<IProps> = ({experience})
         <div className={className}>
             <span onClick={toggleAdditionalInfo} className={styles.additionalInfoTitle}>
                 <span>Show More Information</span>
-                <SvgIcon iconName="toggle_arrow"/>
+                <SvgIcon iconName="toggleArrow"/>
             </span>
 
             <div className={styles.additionalInfoContent}>
