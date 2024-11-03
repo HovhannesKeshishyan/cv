@@ -7,7 +7,7 @@ import { TheFooter } from "./components/the-footer/TheFooter";
 import { SwitchButton } from "./utils/switch-button/SwitchButton";
 
 const App: React.FC = () => {
-  const theme = useTypedSelector(state => state.app_main.theme);
+  const theme = useTypedSelector(state => state.appMain.theme);
   const class_name = theme === "dark" ? "App app-dark-theme" : "App";
   return (
     <div className={class_name}>

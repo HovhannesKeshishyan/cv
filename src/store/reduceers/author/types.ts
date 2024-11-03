@@ -29,7 +29,7 @@ export interface IExperience {
 
 export interface IAuthorSliceState {
   name: string;
-  last_name: string;
+  lastName: string;
   birth: string;
 
   contacts: IContacts;

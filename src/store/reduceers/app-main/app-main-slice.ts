@@ -1,19 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IAppMainSliceState } from "./types";
 
-const selected_theme = localStorage.getItem("selected_theme");
+const selectedTheme = localStorage.getItem("selectedTheme");
 const initialState: IAppMainSliceState = {
-  theme: selected_theme === "light" ? "light" : "dark",
+  theme: selectedTheme === "light" ? "light" : "dark",
 };
 
 const appMainSlice = createSlice({
-  name: "app_main_slice",
+  name: "appMainSlice",
   initialState,
   reducers: {
     toggleTheme(state: IAppMainSliceState) {
-      const new_theme = state.theme === "light" ? "dark" : "light";
-      localStorage.setItem("selected_theme", new_theme);
-      state.theme = new_theme;
+      const newTheme = state.theme === "light" ? "dark" : "light";
+      localStorage.setItem("selectedTheme", newTheme);
+      state.theme = newTheme;
     },
   },
 });
