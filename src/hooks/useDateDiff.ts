@@ -11,18 +11,18 @@ export const useDateDiff = (from: string, to: string) => {
     let years = diff.years;
     let months = Math.round(diff.months);
 
-    //when mounths rounded to top and get 12
+    //when months rounded to top and get 12
     if(months === 12) {
       years++;
       months = 0;
     }
 
-    const years_str = years > 1 ? "years" : "year";
-    const months_str = months > 1 ? "months" : "month";
+    const yearsStr = years > 1 ? "years" : "year";
+    const monthsStr = months > 1 ? "months" : "month";
 
     const result: string[] = [];    
-    if (years > 0) result.push(`${years} ${years_str}`);
-    if (months > 0) result.push(`${months} ${months_str}`);
+    if (years > 0) result.push(`${years} ${yearsStr}`);
+    if (months > 0) result.push(`${months} ${monthsStr}`);
     setDifference(result.join(", "));
   }, [from, to]);
 
@@ -32,8 +32,8 @@ export const useDateDiff = (from: string, to: string) => {
 const getToday = () => {
   const todayObj = DateTime.local();
   const { day, month, year } = todayObj;
-  const day_string = day < 10 ? "0" + day : day.toString();
-  const month_string = month < 10 ? "0" + month : month.toString();
-  const year_string = year.toString();
-  return DateTime.fromISO(`${year_string}-${month_string}-${day_string}`);
+  const dayString = day < 10 ? "0" + day : day.toString();
+  const monthString = month < 10 ? "0" + month : month.toString();
+  const yearString = year.toString();
+  return DateTime.fromISO(`${yearString}-${monthString}-${dayString}`);
 };

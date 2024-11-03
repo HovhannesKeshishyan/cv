@@ -1,4 +1,4 @@
-import React from "react";
+import {FC} from "react";
 
 import DefaultSkillIcon from "@/assets/icons/skills/svg/Light.svg";
 import JavaScriptIcon from "@/assets/icons/skills/svg/JavaScript.svg";
@@ -19,7 +19,7 @@ import FigmaIcon from "@/assets/icons/skills/svg/Figma.svg";
 import ArticulateStorylineIcon from "@/assets/icons/skills/svg/ArticulateStoryline.svg";
 
 const ICONS_MAP = {
-    default_icon: DefaultSkillIcon,
+    defaultIcon: DefaultSkillIcon,
     javascript: JavaScriptIcon,
     vue: VueIcon,
     react: ReactIcon,
@@ -35,17 +35,17 @@ const ICONS_MAP = {
     git: GitIcon,
     photoshop: PhotoshopIcon,
     figma: FigmaIcon,
-    articulate_storyline: ArticulateStorylineIcon
+    articulateStoryline: ArticulateStorylineIcon
 };
 
 export type TImgSvgIconName = keyof typeof ICONS_MAP;
 
 interface IProps {
-    icon_name: TImgSvgIconName;
+    iconName: TImgSvgIconName;
     alt?: string;
 }
 
-export const ImgSvgIcon: React.FC<IProps> = ({icon_name, alt = ""}) => {
-    const SVG = ICONS_MAP[icon_name] || ICONS_MAP.default_icon;
+export const ImgSvgIcon: FC<IProps> = ({iconName, alt = ""}) => {
+    const SVG = ICONS_MAP[iconName] || ICONS_MAP.defaultIcon;
     return <img src={SVG} alt={alt}/>;
 };

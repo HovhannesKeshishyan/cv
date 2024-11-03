@@ -1,4 +1,4 @@
-import React from "react";
+import {FC} from "react";
 import { useTypedSelector } from "./hooks/useTypedSelector";
 import "./App.scss";
 import { TheHeader } from "./components/the-header/TheHeader";
@@ -6,11 +6,11 @@ import { MainContainer } from "./components/main-container/MainContainer";
 import { TheFooter } from "./components/the-footer/TheFooter";
 import { SwitchButton } from "./utils/switch-button/SwitchButton";
 
-const App: React.FC = () => {
-  const theme = useTypedSelector(state => state.app_main.theme);
-  const class_name = theme === "dark" ? "App app-dark-theme" : "App";
+const App: FC = () => {
+  const theme = useTypedSelector(state => state.appMain.theme);
+  const className = theme === "dark" ? "App app-dark-theme" : "App";
   return (
-    <div className={class_name}>
+    <div className={className}>
       <SwitchButton theme={theme} />
       <TheHeader />
       <MainContainer />

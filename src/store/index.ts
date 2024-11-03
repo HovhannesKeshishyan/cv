@@ -5,7 +5,7 @@ import authorReducer from "./reduceers/author/author-slice";
 
 const store = configureStore({
   reducer: {
-    app_main: appMainReducer,
+    appMain: appMainReducer,
     author: authorReducer,
   },
 });

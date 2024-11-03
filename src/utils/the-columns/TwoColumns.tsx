@@ -1,27 +1,27 @@
-import React, { ReactElement } from "react";
+import { FC, ReactElement } from "react";
 import styles from "./TwoColumns.module.scss";
-import { SeperatorLine } from "../seperator-line/SeperatorLine";
+import { SeparatorLine } from "@/utils/separator-line/SeparatorLine.tsx";
 
 interface ITwoColumnsProps {
   children: [ReactElement, ReactElement];
-  columns_breackpoint?: number;
+  columnsBreakpoint?: number;
 }
 
-export const TwoColumns: React.FC<ITwoColumnsProps> = ({
+export const TwoColumns: FC<ITwoColumnsProps> = ({
   children,
-  columns_breackpoint = 1200
+  columnsBreakpoint = 1200
 }) => {
-  const [first_child, second_child] = children;
-  const breackpoint_class_name = `breackpoint_${columns_breackpoint}`;
-  const class_names = `${styles.two_columns} ${styles[breackpoint_class_name]}`;
+  const [firstChild, secondChild] = children;
+  const breakpointClassName = `breakpoint_${columnsBreakpoint}`;
+  const classNames = `${styles.twoColumns} ${styles[breakpointClassName]}`;
 
   return (
-    <div className={class_names}>
-      {first_child}
-      <div className={styles.two_columns_seperator_line}>        
-        <SeperatorLine />
+    <div className={classNames}>
+      {firstChild}
+      <div className={styles.twoColumnsSeparatorLine}>
+        <SeparatorLine />
       </div>
-      {second_child}
+      {secondChild}
     </div>
   );
 };

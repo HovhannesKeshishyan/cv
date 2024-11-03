@@ -1,4 +1,4 @@
-import React from "react";
+import {FC} from "react";
 import {LinkedinIcon} from "@/utils/svg-icons/social/LinkedinIcon.tsx";
 import {FacebookIcon} from "@/utils/svg-icons/social/FacebookIcon.tsx";
 import {GitHubIcon} from "@/utils/svg-icons/social/GitHubIcon.tsx";
@@ -14,7 +14,7 @@ const SOCIAL_ICONS = {
 }
 
 const UTILS_ICONS = {
-    toggle_arrow: ToggleArrowIcon
+    toggleArrow: ToggleArrowIcon
 }
 
 const ICONS_MAP = {
@@ -25,10 +25,10 @@ const ICONS_MAP = {
 export type TSvgIconName = keyof typeof ICONS_MAP;
 
 interface IProps {
-    icon_name: TSvgIconName;
+    iconName: TSvgIconName;
 }
 
-export const SvgIcon: React.FC<IProps> = ({icon_name}) => {
-    const SVG = ICONS_MAP[icon_name];
+export const SvgIcon: FC<IProps> = ({iconName}) => {
+    const SVG = ICONS_MAP[iconName];
     return <SVG/>;
 }

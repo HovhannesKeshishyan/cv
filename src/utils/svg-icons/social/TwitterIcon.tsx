@@ -1,6 +1,6 @@
-import React from "react";
+import {FC} from "react";
 
-export const TwitterIcon: React.FC = () => {
+export const TwitterIcon: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

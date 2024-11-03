@@ -5,7 +5,7 @@ export interface IContacts {
   phone: string;
   phone_label?: string;
   address: string;
-  address_google_map?: string;
+  googleMapAddress?: string;
 }
 
 export interface ISocialMedia {
@@ -29,7 +29,7 @@ export interface IExperience {
 
 export interface IAuthorSliceState {
   name: string;
-  last_name: string;
+  lastName: string;
   birth: string;
 
   contacts: IContacts;
