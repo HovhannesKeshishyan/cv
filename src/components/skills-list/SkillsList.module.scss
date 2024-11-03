@@ -1,13 +1,13 @@
-.skills_list {
-  .skills_container {
+.skillsList {
+  .skillsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
-    .skills_list_column {
+    .skillsListColumn {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      .skill_item {
+      .skillItem {
         display: flex;
         gap: 10px;
         align-items: center;
@@ -15,7 +15,7 @@
           width: 30px;
           height: 30px;
         }
-        .skill_name {
+        .skillName {
           font-size: var(--font-size-big);
           font-weight: var(--font-wight-bolder);
           color: var(--text-color-primary);
@@ -28,15 +28,15 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .skills_list {
-    .skills_container {
-      .skills_list_column {
-        .skill_item {
+  .skillsList {
+    .skillsContainer {
+      .skillsListColumn {
+        .skillItem {
           img {
             width: 30px;
             height: 30px;
           }
-          .skill_name {
+          .skillName {
             font-size: var(--font-size-md);
           }
         }
@@ -46,8 +46,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .skills_list {
-    .skills_container {
+  .skillsList {
+    .skillsContainer {
       grid-template-columns: 1fr;
       grid-gap: 30px;      
     }

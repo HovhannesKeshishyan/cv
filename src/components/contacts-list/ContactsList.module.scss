@@ -3,7 +3,7 @@
   flex-direction: column;
   font-weight: var(--font-wight-bolder);
 
-  .contact_item {
+  .contactItem {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 1200px) {
   .contacts {
-    .contact_item {
+    .contactItem {
       span {
         width: 100px;
       }
@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 630px) {
   .contacts {
-    .contact_item {
+    .contactItem {
       a {
         font-size: var(--font-size-md);
       }
@@ -47,11 +47,11 @@
 
 @media only screen and (max-width: 530px) {
   .contacts {
-    .contact_item {
+    .contactItem {
       a {
         font-size: var(--font-size-md-smaller);
       }
-      a.email_href {
+      a.emailHref {
         overflow-wrap: anywhere;
       }
     }

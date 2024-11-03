@@ -10,7 +10,7 @@ const CONTACTS: IContacts = {
     email: "hovhanneskeshishyan@gmail.com",
     phone: "+37498088092",
     address: "Abovyan, Armenia",
-    address_google_map: "https://goo.gl/maps/HK46jouRBXPehNY18"
+    googleMapAddress: "https://goo.gl/maps/HK46jouRBXPehNY18"
 };
 
 const EXPERIENCES: IExperience[] = [

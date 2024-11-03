@@ -25,10 +25,10 @@ const ICONS_MAP = {
 export type TSvgIconName = keyof typeof ICONS_MAP;
 
 interface IProps {
-    icon_name: TSvgIconName;
+    iconName: TSvgIconName;
 }
 
-export const SvgIcon: React.FC<IProps> = ({icon_name}) => {
-    const SVG = ICONS_MAP[icon_name];
+export const SvgIcon: React.FC<IProps> = ({iconName}) => {
+    const SVG = ICONS_MAP[iconName];
     return <SVG/>;
 }

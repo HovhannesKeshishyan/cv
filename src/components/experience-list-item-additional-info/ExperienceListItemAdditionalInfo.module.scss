@@ -1,9 +1,9 @@
-.experience_item_additional_info {
+.experienceItemAdditionalInfo {
   color: var(--text-color-primary-2);
   font-size: var(--font-size-sm);
   font-weight: var(--font-wight-bolder);
 
-  .additional_info_title {
+  .additionalInfoTitle {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     }
   }
 
-  .additional_info_content {
+  .additionalInfoContent {
     max-height: 0;
     opacity: 0;
     display: flex;
@@ -27,7 +27,7 @@
     transition: max-height 0.2s ease-in-out, opacity 0.3s ease-in-out;
     padding-top: 1rem;
 
-    .section_title {
+    .sectionTitle {
       font-weight: var(--font-wight-bolder);
       font-size: var(--font-size-md-smaller);
     }
@@ -40,13 +40,13 @@
   }
 
   &.opened {
-    .additional_info_title {
+    .additionalInfoTitle {
       svg {
         transform: rotate(180deg);
       }
     }
 
-    .additional_info_content {
+    .additionalInfoContent {
       max-height: 100vh;
       opacity: 1;
     }

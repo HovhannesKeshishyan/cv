@@ -1,4 +1,4 @@
-import React from "react";
+import {FC} from "react";
 import styles from "./LanguagesList.module.scss";
 
 const LANGUAGES = [
@@ -7,19 +7,19 @@ const LANGUAGES = [
   { language: "English", level: "Advanced" },
 ];
 
-export const LanguagesList: React.FC = () => {
-  const languages_list = LANGUAGES.map((language) => {
+export const LanguagesList: FC = () => {
+  const languagesList = LANGUAGES.map((language) => {
     return (
       <div className={styles.language} key={language.language}>
-        <p className={styles.language_name}>{language.language}</p>
-        <p className={styles.language_level}>{language.level}</p>
+        <p className={styles.languageName}>{language.language}</p>
+        <p className={styles.languageLevel}>{language.level}</p>
       </div>
     );
   });
   return (
     <div className={styles.languages}>
       <h2 className="app-section-title">Languages</h2>
-      {languages_list}
+      {languagesList}
     </div>
   );
 };

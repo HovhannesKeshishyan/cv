@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainContainer.module.scss";
 import { ContactsList } from "../contacts-list/ContactsList";
 import { SeperatorLine } from "../../utils/seperator-line/SeperatorLine";
-import { EducattionInfo } from "../education-info/EducattionInfo";
+import { EducationInfo } from "../education-info/EducationInfo.tsx";
 import { TwoColumns } from "../../utils/the-columns/TwoColumns";
 import { ExperienceList } from "../experience-list/ExperienceList";
 import { LanguagesList } from "../languages-list/LanguagesList";
@@ -15,7 +15,7 @@ export const MainContainer: React.FC = () => {
 
       <TwoColumns>
         <ContactsList />
-        <EducattionInfo />
+        <EducationInfo />
       </TwoColumns>
 
       <SeperatorLine />

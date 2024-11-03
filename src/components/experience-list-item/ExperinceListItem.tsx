@@ -15,7 +15,7 @@ export const ExperienceListItem: React.FC<IProps> = ({experience}) => {
     return (
         <div className={styles.experience}>
             <div className={styles.role}>{experience.role}</div>
-            <div className={styles.company_name}>{experience.company}</div>
+            <div className={styles.companyName}>{experience.company}</div>
             <div className={styles.year}>
           <span>
             {getExperiencePeriod(experience.year.from, experience.year.to)}

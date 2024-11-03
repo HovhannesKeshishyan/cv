@@ -14,20 +14,20 @@ export const ExperienceListItemAdditionalInfo: React.FC<IProps> = ({experience})
         setOpened(prev => !prev);
     }
 
-    let class_name = styles.experience_item_additional_info + " ";
-    if (opened) class_name += styles.opened;
+    let className = styles.experienceItemAdditionalInfo + " ";
+    if (opened) className += styles.opened;
 
     return (
-        <div className={class_name}>
-            <span onClick={toggleAdditionalInfo} className={styles.additional_info_title}>
+        <div className={className}>
+            <span onClick={toggleAdditionalInfo} className={styles.additionalInfoTitle}>
                 <span>Show More Information</span>
-                <SvgIcon icon_name="toggle_arrow"/>
+                <SvgIcon iconName="toggle_arrow"/>
             </span>
 
-            <div className={styles.additional_info_content}>
+            <div className={styles.additionalInfoContent}>
                 {experience.technologies?.length ?
                     <div>
-                        <p className={styles.section_title}>Technologies</p>
+                        <p className={styles.sectionTitle}>Technologies</p>
                         <p>
                             {experience.technologies.join(", ")}
                         </p>
@@ -36,7 +36,7 @@ export const ExperienceListItemAdditionalInfo: React.FC<IProps> = ({experience})
 
                 {
                     experience.projects?.length ? <div className={styles.projects}>
-                        <p className={styles.section_title}>Projects</p>
+                        <p className={styles.sectionTitle}>Projects</p>
                         {experience.projects.map((project, index) => {
                             return <p key={project.id}>{`${index + 1}) ${project.description}`}</p>
                         })}

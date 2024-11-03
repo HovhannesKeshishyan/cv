@@ -8,7 +8,7 @@ footer,
   padding: 0 5% 0 0;
   transition: var(--app-theme-transition);
 
-  .social_media {
+  .socialMedia {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -35,7 +35,7 @@ footer,
 
 @media only screen and (max-width: 720px) {
   footer, .footer {
-    .social_media {
+    .socialMedia {
       svg {
         width: 30px;
         height: 30px;
@@ -46,7 +46,7 @@ footer,
 
 @media only screen and (max-width: 300px) {
   footer, .footer {
-    .social_media {
+    .socialMedia {
       gap: 10px;
       svg {
         width: 20px;

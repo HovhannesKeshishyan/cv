@@ -1,9 +1,9 @@
-import React from "react";
+import {FC} from "react";
 import {useTypedSelector} from "@/hooks/useTypedSelector.ts";
 import {ExperienceListItem} from "@/components/experience-list-item/ExperinceListItem.tsx";
 
 
-export const ExperienceList: React.FC = () => {
+export const ExperienceList: FC = () => {
     let experiences = useTypedSelector((state) => state.author.experiences);
     experiences = experiences.filter((experience) => !experience.hide);
 

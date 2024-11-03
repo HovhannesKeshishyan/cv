@@ -1,4 +1,4 @@
-import React from "react";
+import {FC} from "react";
 
 import DefaultSkillIcon from "@/assets/icons/skills/svg/Light.svg";
 import JavaScriptIcon from "@/assets/icons/skills/svg/JavaScript.svg";
@@ -41,11 +41,11 @@ const ICONS_MAP = {
 export type TImgSvgIconName = keyof typeof ICONS_MAP;
 
 interface IProps {
-    icon_name: TImgSvgIconName;
+    iconName: TImgSvgIconName;
     alt?: string;
 }
 
-export const ImgSvgIcon: React.FC<IProps> = ({icon_name, alt = ""}) => {
-    const SVG = ICONS_MAP[icon_name] || ICONS_MAP.default_icon;
+export const ImgSvgIcon: FC<IProps> = ({iconName, alt = ""}) => {
+    const SVG = ICONS_MAP[iconName] || ICONS_MAP.default_icon;
     return <img src={SVG} alt={alt}/>;
 };
