@@ -110,7 +110,7 @@ const SOCIAL_MEDIA: ISocialMedia[] = [
     },
     {
         name: "github",
-        href: "https://github.com/Hovhannes1991",
+        href: "https://github.com/HovhannesKeshishyan",
     },
     {
         name: "facebook",

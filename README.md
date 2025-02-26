@@ -46,4 +46,4 @@ React, Redux, TypeScript
 
 ### Github URL
 
-[https://github.com/Hovhannes1991/cv-react](https://github.com/Hovhannes1991/cv-react).
+[https://github.com/HovhannesKeshishyan/cv-react](https://github.com/HovhannesKeshishyan/cv-react).
