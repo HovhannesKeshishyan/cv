@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+
+import {FaChevronDown} from "react-icons/fa";
+
 import styles from "./ExperienceListItemAdditionalInfo.module.scss";
-import {IExperience} from "@/store/reduceers/author/types.ts";
-import {SvgIcon} from "@/utils/svg-icon/SvgIcon.tsx";
+import type {IExperience} from "@/types";
 
 interface IProps {
     experience: IExperience;
@@ -21,7 +23,7 @@ export const ExperienceListItemAdditionalInfo: React.FC<IProps> = ({experience})
         <div className={className}>
             <span onClick={toggleAdditionalInfo} className={styles.additionalInfoTitle}>
                 <span>Show More Information</span>
-                <SvgIcon iconName="toggleArrow"/>
+               <FaChevronDown/>
             </span>
 
             <div className={styles.additionalInfoContent}>

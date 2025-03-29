@@ -1,6 +1,8 @@
 @import "typeface-roboto";
 
 :root {
+  color-scheme: light dark;
+
   --app-green: #40e0d0;
   --app-black: #000;
   --app-white: #fff;
@@ -33,7 +35,7 @@
   --screen-lg: 1200px;
 }
 
-.app-dark-theme {
+.dark {
   --header-bg: #057267;
   --footer-bg: #057267;
   --text-color-primary: var(--app-green);

@@ -1,9 +1,13 @@
 import {FC} from "react";
-import {IExperience} from "@/store/reduceers/author/types.ts";
-import {useDateDiff} from "@/hooks/useDateDiff.ts";
+import Image from "next/image";
+
+import {useDateDiff} from "@/hooks/useDateDiff";
 import {Tooltip as ReactTooltip} from "react-tooltip";
 import InfoIcon from "@/assets/icons/info.svg";
+
 import styles from "./ExperienceDuration.module.scss";
+
+import type {IExperience} from "@/types";
 
 
 interface IExperienceDurationProp {
@@ -14,10 +18,12 @@ export const ExperienceDuration: FC<IExperienceDurationProp> = ({experience}) =>
     const diff = useDateDiff(experience.year.from, experience.year.to);
     return (
         <>
-            <img
+            <Image
                 src={InfoIcon}
                 className={styles.infoIcon}
                 alt="Information icon"
+                width={20}
+                height={20}
                 data-tooltip-id={`duration-${experience.id}`}
                 data-tooltip-content={diff}
                 data-tooltip-place="top"

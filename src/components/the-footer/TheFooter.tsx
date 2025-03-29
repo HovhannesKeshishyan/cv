@@ -1,23 +1,50 @@
 import {FC} from "react";
-import {useTypedSelector} from "@/hooks/useTypedSelector.ts";
+
+import {FaLinkedin} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa";
+import {FaTwitter} from "react-icons/fa";
+
+import type {ISocialMedia} from "@/types";
+
 import styles from "./TheFooter.module.scss";
-import {SvgIcon} from "@/utils/svg-icon/SvgIcon.tsx";
+
+const socialMedia: ISocialMedia[] = [
+    {
+        name: "linkedin",
+        href: "https://www.linkedin.com/in/hovhannes-keshishyan",
+        icon: FaLinkedin
+    },
+    {
+        name: "github",
+        href: "https://github.com/HovhannesKeshishyan",
+        icon: FaGithub
+    },
+    {
+        name: "facebook",
+        href: "https://www.facebook.com/HovoKeshishyan",
+        icon: FaFacebook
+    },
+    {
+        name: "twitter",
+        href: "https://twitter.com/hovo1991",
+        icon: FaTwitter
+    },
+];
 
 export const TheFooter: FC = () => {
-    const socialMedias = useTypedSelector(state => state.author.social);
-
     return (
-        <footer>
+        <footer className={styles.footer}>
             <div className={styles.socialMedia}>
-                {socialMedias.map((socialMedia) => {
+                {socialMedia.map((sm) => {
                     return (
                         <a
-                            href={socialMedia.href}
+                            href={sm.href}
                             target="_blank"
-                            aria-label={`${socialMedia.name} link`}
-                            key={socialMedia.name}
+                            aria-label={`${sm.name} link`}
+                            key={sm.name}
                         >
-                            <SvgIcon iconName={socialMedia.name}/>
+                            <sm.icon/>
                         </a>
                     );
                 })}

@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import styles from "./TwoColumns.module.scss";
-import { SeparatorLine } from "@/utils/separator-line/SeparatorLine.tsx";
+import { SeparatorLine } from "@/utils/separator-line/SeparatorLine";
 
 interface ITwoColumnsProps {
   children: [ReactElement, ReactElement];
