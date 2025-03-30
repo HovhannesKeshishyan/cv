@@ -2,9 +2,9 @@
 import {useTheme} from "next-themes"
 
 import {SwitchButton} from "@/utils/switch-button/SwitchButton";
-import {TheHeader} from "@/components/the-header/TheHeader";
+import {Header} from "@/components/header/Header";
 import {MainContainer} from "@/components/main-container/MainContainer";
-import {TheFooter} from "@/components/the-footer/TheFooter";
+import {Footer} from "@/components/footer/Footer";
 
 import styles from "./page.module.css";
 
@@ -19,9 +19,9 @@ export default function App() {
     return (
         <div className={styles.App}>
             <SwitchButton theme={theme} toggleTheme={toggleTheme}/>
-            <TheHeader/>
+            <Header/>
             <MainContainer/>
-            <TheFooter/>
+            <Footer/>
         </div>
     );
 };

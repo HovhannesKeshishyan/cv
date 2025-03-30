@@ -1,8 +1,8 @@
 import {FC} from "react";
 import Image from "next/image";
-import styles from "./TheHeader.module.scss";
+import styles from "./Header.module.scss";
 
-export const TheHeader: FC = () => {
+export const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.imageContainer}>

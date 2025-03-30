@@ -7,7 +7,7 @@ import {FaTwitter} from "react-icons/fa";
 
 import type {ISocialMedia} from "@/types";
 
-import styles from "./TheFooter.module.scss";
+import styles from "./Footer.module.scss";
 
 const socialMedia: ISocialMedia[] = [
     {
@@ -32,7 +32,7 @@ const socialMedia: ISocialMedia[] = [
     },
 ];
 
-export const TheFooter: FC = () => {
+export const Footer: FC = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.socialMedia}>
