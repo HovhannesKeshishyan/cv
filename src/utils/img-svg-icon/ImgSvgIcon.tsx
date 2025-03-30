@@ -1,7 +1,6 @@
 import {FC} from "react";
 import Image from "next/image";
 
-
 import DefaultSkillIcon from "@/assets/icons/skills/svg/Light.svg";
 import JavaScriptIcon from "@/assets/icons/skills/svg/JavaScript.svg";
 import VueIcon from "@/assets/icons/skills/svg/Vue.svg";
@@ -36,14 +35,14 @@ const ICONS_MAP = {
     figma: FigmaIcon,
 };
 
-export type TImgSvgIconName = keyof typeof ICONS_MAP;
+export type ImgSvgIconName = keyof typeof ICONS_MAP;
 
-interface IProps {
-    iconName: TImgSvgIconName;
+interface Props {
+    iconName: ImgSvgIconName;
     alt?: string;
 }
 
-export const ImgSvgIcon: FC<IProps> = ({iconName, alt = ""}) => {
+export const ImgSvgIcon: FC<Props> = ({iconName, alt = ""}) => {
     const SVG = ICONS_MAP[iconName] || ICONS_MAP.defaultIcon;
     return <Image
         src={SVG}

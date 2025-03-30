@@ -5,11 +5,11 @@ import {FaGithub} from "react-icons/fa";
 import {FaFacebook} from "react-icons/fa";
 import {FaTwitter} from "react-icons/fa";
 
-import type {ISocialMedia} from "@/types";
+import type {SocialMedia} from "@/types";
 
 import styles from "./Footer.module.scss";
 
-const socialMedia: ISocialMedia[] = [
+const socialMedia: SocialMedia[] = [
     {
         name: "linkedin",
         href: "https://www.linkedin.com/in/hovhannes-keshishyan",

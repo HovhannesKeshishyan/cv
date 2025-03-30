@@ -1,15 +1,15 @@
-import React, {useState} from "react";
+import {type FC, useState} from "react";
 
 import {FaChevronDown} from "react-icons/fa";
 
 import styles from "./ExperienceListItemAdditionalInfo.module.scss";
-import type {IExperience} from "@/types";
+import type {Experience} from "@/types";
 
-interface IProps {
-    experience: IExperience;
+interface Props {
+    experience: Experience;
 }
 
-export const ExperienceListItemAdditionalInfo: React.FC<IProps> = ({experience}) => {
+export const ExperienceListItemAdditionalInfo: FC<Props> = ({experience}) => {
     const [opened, setOpened] = useState(false);
 
     const toggleAdditionalInfo = () => {

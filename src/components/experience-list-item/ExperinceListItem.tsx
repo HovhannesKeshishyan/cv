@@ -1,17 +1,20 @@
 import type {FC} from "react";
-import styles from "./ExperienceListItem.module.scss";
+
 import {ExperienceDuration} from "../experience-duration/ExperienceDuration";
 import {getExperiencePeriod} from "@/services/helpers";
 import {
     ExperienceListItemAdditionalInfo
 } from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo";
-import type {IExperience} from "@/types";
 
-interface IProps {
-    experience: IExperience
+import styles from "./ExperienceListItem.module.scss";
+
+import type {Experience} from "@/types";
+
+interface Props {
+    experience: Experience
 }
 
-export const ExperienceListItem: FC<IProps> = ({experience}) => {
+export const ExperienceListItem: FC<Props> = ({experience}) => {
     return (
         <div className={styles.experience}>
             <div className={styles.role}>{experience.role}</div>

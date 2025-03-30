@@ -1,17 +1,18 @@
-import {FC, useMemo} from "react";
-import styles from "./SkillsList.module.scss";
+import {type FC, useMemo} from "react";
 
-import type {TImgSvgIconName} from "@/utils/img-svg-icon/ImgSvgIcon";
+import type {ImgSvgIconName} from "@/utils/img-svg-icon/ImgSvgIcon";
 import {ImgSvgIcon} from "@/utils/img-svg-icon/ImgSvgIcon";
 import {useSplitArrayToTwoParts} from "@/hooks/useSplitArraytoTwoParts";
 
-interface ISkill {
+import styles from "./SkillsList.module.scss";
+
+interface Skill {
     name: string;
     level: string;
-    icon: TImgSvgIconName;
+    icon: ImgSvgIconName;
 }
 
-const SKILLS: ISkill[] = [
+const SKILLS: Skill[] = [
     {name: "JavaScript", level: "", icon: "javascript"},
     {name: "TypeScript", level: "", icon: "typescript"},
     {name: "Vue", level: "", icon: "vue"},

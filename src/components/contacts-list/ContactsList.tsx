@@ -1,8 +1,8 @@
 import {FC} from "react";
 import styles from "./ContactsList.module.scss";
-import type {IContacts} from "@/types";
+import type {Contacts} from "@/types";
 
-const contacts: IContacts = {
+const contacts: Contacts = {
     email: "hovhanneskeshishyan@gmail.com",
     phone: "+37498088092",
     address: "Abovyan, Armenia",

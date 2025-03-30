@@ -1,8 +1,8 @@
 import {FC} from "react";
 import {ExperienceListItem} from "@/components/experience-list-item/ExperinceListItem";
-import type {IExperience} from "@/types";
+import type {Experience} from "@/types";
 
-const EXPERIENCES: IExperience[] = [
+const EXPERIENCES: Experience[] = [
     {
         id: "egs",
         company: "Energize Global Services Armenia",

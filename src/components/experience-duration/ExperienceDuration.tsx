@@ -1,20 +1,19 @@
 import {FC} from "react";
 import Image from "next/image";
 
-import {useDateDiff} from "@/hooks/useDateDiff";
 import {Tooltip as ReactTooltip} from "react-tooltip";
+
+import {useDateDiff} from "@/hooks/useDateDiff";
 import InfoIcon from "@/assets/icons/info.svg";
+import type {Experience} from "@/types";
 
 import styles from "./ExperienceDuration.module.scss";
 
-import type {IExperience} from "@/types";
-
-
-interface IExperienceDurationProp {
-    experience: IExperience;
+interface ExperienceDurationProp {
+    experience: Experience;
 }
 
-export const ExperienceDuration: FC<IExperienceDurationProp> = ({experience}) => {
+export const ExperienceDuration: FC<ExperienceDurationProp> = ({experience}) => {
     const diff = useDateDiff(experience.year.from, experience.year.to);
     return (
         <>

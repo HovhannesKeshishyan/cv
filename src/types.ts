@@ -1,6 +1,6 @@
 import {IconType} from "react-icons";
 
-export interface IContacts {
+export interface Contacts {
     email: string;
     phone: string;
     phone_label?: string;
@@ -8,25 +8,41 @@ export interface IContacts {
     googleMapAddress?: string;
 }
 
-export interface ISocialMedia {
+export interface SocialMedia {
     name: string;
     href: string;
     icon: IconType;
 }
 
-interface IProject {
+interface Project {
     id: number;
     description: string;
 }
-export interface IExperience {
+
+export interface Experience {
     id: string;
     company: string;
     year: { from: string; to: string };
     role: string;
-    technologies: TTechnology[];
-    projects: IProject[];
+    technologies: Technology[];
+    projects: Project[];
     hide?: boolean;
 }
 
 
-export type TTechnology = "HTML" | "CSS" | "JavaScript" | "TypeScript" | "Vue" | "VUEX" | "Vue Router" | "React" | "Redux" | "Angular" | "Webpack" | "SASS" | "SCSS" | "LESS" | "Articulate Storyline";
+export type Technology =
+    "HTML"
+    | "CSS"
+    | "JavaScript"
+    | "TypeScript"
+    | "Vue"
+    | "VUEX"
+    | "Vue Router"
+    | "React"
+    | "Redux"
+    | "Angular"
+    | "Webpack"
+    | "SASS"
+    | "SCSS"
+    | "LESS"
+    | "Articulate Storyline";

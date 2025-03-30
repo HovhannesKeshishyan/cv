@@ -1,17 +1,20 @@
 "use client"
 
-import {type FC, useState, useEffect} from "react";
-import styles from "./SwitchButton.module.scss";
-import SunIcon from "@/assets/icons/sun.svg";
-import MoonIcon from "@/assets/icons/moon.svg";
 import Image from "next/image";
 
-interface ISwitchButtonProps {
+import {type FC, useState, useEffect} from "react";
+
+import SunIcon from "@/assets/icons/sun.svg";
+import MoonIcon from "@/assets/icons/moon.svg";
+
+import styles from "./SwitchButton.module.scss";
+
+interface SwitchButtonProps {
     theme: string | undefined;
     toggleTheme: () => void;
 }
 
-export const SwitchButton: FC<ISwitchButtonProps> = (props) => {
+export const SwitchButton: FC<SwitchButtonProps> = (props) => {
     const [isClient, setIsClient] = useState(false);
     const isDark = props.theme === "dark";
 
@@ -22,7 +25,7 @@ export const SwitchButton: FC<ISwitchButtonProps> = (props) => {
         setIsClient(true);
     }, []);
 
-    if(!isClient) return;
+    if (!isClient) return;
 
     return (
         <div onClick={props.toggleTheme} className={className}>
