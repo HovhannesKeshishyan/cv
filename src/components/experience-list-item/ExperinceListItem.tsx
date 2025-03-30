@@ -1,17 +1,20 @@
-import React from "react";
-import styles from "./ExperienceListItem.module.scss";
+import type {FC} from "react";
+
 import {ExperienceDuration} from "../experience-duration/ExperienceDuration";
-import {getExperiencePeriod} from "@/services/helpers.ts";
-import {IExperience} from "@/store/reduceers/author/types.ts";
+import {getExperiencePeriod} from "@/services/helpers";
 import {
     ExperienceListItemAdditionalInfo
-} from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo.tsx";
+} from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo";
 
-interface IProps {
-    experience: IExperience
+import styles from "./ExperienceListItem.module.scss";
+
+import type {Experience} from "@/types";
+
+interface Props {
+    experience: Experience
 }
 
-export const ExperienceListItem: React.FC<IProps> = ({experience}) => {
+export const ExperienceListItem: FC<Props> = ({experience}) => {
     return (
         <div className={styles.experience}>
             <div className={styles.role}>{experience.role}</div>

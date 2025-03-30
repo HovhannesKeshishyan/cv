@@ -1,33 +1,32 @@
-import {FC, useMemo} from "react";
-import styles from "./SkillsList.module.scss";
+import {type FC, useMemo} from "react";
 
-import type {TImgSvgIconName} from "@/utils/img-svg-icon/ImgSvgIcon";
+import type {ImgSvgIconName} from "@/utils/img-svg-icon/ImgSvgIcon";
 import {ImgSvgIcon} from "@/utils/img-svg-icon/ImgSvgIcon";
 import {useSplitArrayToTwoParts} from "@/hooks/useSplitArraytoTwoParts";
 
-interface ISkill {
+import styles from "./SkillsList.module.scss";
+
+interface Skill {
     name: string;
     level: string;
-    icon: TImgSvgIconName;
+    icon: ImgSvgIconName;
 }
 
-const SKILLS: ISkill[] = [
+const SKILLS: Skill[] = [
     {name: "JavaScript", level: "", icon: "javascript"},
+    {name: "TypeScript", level: "", icon: "typescript"},
     {name: "Vue", level: "", icon: "vue"},
     {name: "React", level: "", icon: "react"},
     {name: "Redux", level: "", icon: "redux"},
     {name: "Node.js", level: "", icon: "nodejs"},
     {name: "MongoDB", level: "", icon: "mongodb"},
-    {name: "TypeScript", level: "", icon: "typescript"},
     {name: "Webpack", level: "", icon: "webpack"},
     {name: "HTML", level: "", icon: "html"},
     {name: "CSS", level: "", icon: "css"},
     {name: "SASS/SCSS", level: "", icon: "sass"},
     {name: "LESS", level: "", icon: "less"},
     {name: "GIT", level: "", icon: "git"},
-    {name: "Photoshop", level: "", icon: "photoshop"},
     {name: "Figma", level: "", icon: "figma"},
-    {name: "Articulate Storyline", level: "", icon: "articulateStoryline"},
 ];
 
 export const SkillsList: FC = () => {
