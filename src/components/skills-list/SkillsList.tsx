@@ -2,7 +2,6 @@ import {type FC, useMemo} from "react";
 
 import type {ImgSvgIconName} from "@/utils/img-svg-icon/ImgSvgIcon";
 import {ImgSvgIcon} from "@/utils/img-svg-icon/ImgSvgIcon";
-import {useSplitArrayToTwoParts} from "@/hooks/useSplitArraytoTwoParts";
 
 import styles from "./SkillsList.module.scss";
 
@@ -33,24 +32,20 @@ export const SkillsList: FC = () => {
     const skillsList = useMemo(() => {
         return SKILLS.map((skill) => {
             return (
-                <div className={styles.skillItem} key={skill.name}>
+                <li className={styles.skillItem} key={skill.name}>
                     <ImgSvgIcon iconName={skill.icon} alt={`${skill.name} icon`}/>
-                    <p className={styles.skillName}>{skill.name}</p>
-                </div>
+                    <h3 className={styles.skillName}>{skill.name}</h3>
+                </li>
             );
         });
     }, []);
 
-    const [firstColumnItems, secondColumnItems] =
-        useSplitArrayToTwoParts(skillsList);
-
     return (
         <div className={styles.skillsList}>
             <h2 className="app-section-title">Skills</h2>
-            <div className={styles.skillsContainer}>
-                <div className={styles.skillsListColumn}>{firstColumnItems}</div>
-                <div className={styles.skillsListColumn}>{secondColumnItems}</div>
-            </div>
+            <ul className={styles.skillsContainer}>
+                {skillsList}
+            </ul>
         </div>
     );
 };

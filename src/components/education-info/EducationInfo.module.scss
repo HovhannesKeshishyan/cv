@@ -1,6 +1,9 @@
 .education {
   font-weight: var(--font-wight-bolder);
-  p {
+
+  .prof,
+  .college,
+  .graduateYear {
     font-size: var(--font-size-md-bigger);
     width: 75%;
     margin-top: 25px;
@@ -21,7 +24,9 @@
 
 @media only screen and (max-width: 510px) {
   .education {
-    p {
+    .prof,
+    .college,
+    .graduateYear {
       font-size: var(--font-size-md);
     }
   }
