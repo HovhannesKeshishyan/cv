@@ -2,26 +2,24 @@
   .skillsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 100px;
-    .skillsListColumn {
+    grid-gap: 3rem 10rem;
+
+    .skillItem {
       display: flex;
-      flex-direction: column;
-      gap: 30px;
-      .skillItem {
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .skillName {
+        font-size: var(--font-size-big);
+        font-weight: var(--font-wight-bolder);
+        color: var(--text-color-primary);
         display: flex;
-        gap: 10px;
         align-items: center;
-        img {
-          width: 30px;
-          height: 30px;
-        }
-        .skillName {
-          font-size: var(--font-size-big);
-          font-weight: var(--font-wight-bolder);
-          color: var(--text-color-primary);
-          display: flex;
-          align-items: center;
-        }
       }
     }
   }
@@ -30,15 +28,14 @@
 @media only screen and (max-width: 800px) {
   .skillsList {
     .skillsContainer {
-      .skillsListColumn {
-        .skillItem {
-          img {
-            width: 30px;
-            height: 30px;
-          }
-          .skillName {
-            font-size: var(--font-size-md);
-          }
+      .skillItem {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .skillName {
+          font-size: var(--font-size-md);
         }
       }
     }
@@ -49,7 +46,7 @@
   .skillsList {
     .skillsContainer {
       grid-template-columns: 1fr;
-      grid-gap: 30px;      
+      grid-gap: 3rem;
     }
   }
 }
