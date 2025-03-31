@@ -4,7 +4,9 @@ import Image from "next/image";
 import DefaultSkillIcon from "@/assets/icons/skills/svg/Light.svg";
 import JavaScriptIcon from "@/assets/icons/skills/svg/JavaScript.svg";
 import VueIcon from "@/assets/icons/skills/svg/Vue.svg";
+import NuxtJsIcon from "@/assets/icons/skills/svg/Nuxt.svg";
 import ReactIcon from "@/assets/icons/skills/svg/React.svg";
+import NextJSIcon from "@/assets/icons/skills/svg/Next.svg";
 import ReduxIcon from "@/assets/icons/skills/svg/Redux.svg";
 import NodejsIcon from "@/assets/icons/skills/svg/NodeJS.svg";
 import MongoDBIcon from "@/assets/icons/skills/svg/MongoDB.svg";
@@ -21,7 +23,9 @@ const ICONS_MAP = {
     defaultIcon: DefaultSkillIcon,
     javascript: JavaScriptIcon,
     vue: VueIcon,
+    nuxt: NuxtJsIcon,
     react: ReactIcon,
+    next: NextJSIcon,
     redux: ReduxIcon,
     nodejs: NodejsIcon,
     mongodb: MongoDBIcon,
