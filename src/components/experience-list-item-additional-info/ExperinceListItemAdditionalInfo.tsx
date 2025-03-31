@@ -29,7 +29,7 @@ export const ExperienceListItemAdditionalInfo: FC<Props> = ({experience}) => {
             <div className={styles.additionalInfoContent}>
                 {experience.technologies?.length ?
                     <div>
-                        <p className={styles.sectionTitle}>Technologies</p>
+                        <h3 className={styles.sectionTitle}>Technologies</h3>
                         <p>
                             {experience.technologies.join(", ")}
                         </p>
@@ -38,10 +38,12 @@ export const ExperienceListItemAdditionalInfo: FC<Props> = ({experience}) => {
 
                 {
                     experience.projects?.length ? <div className={styles.projects}>
-                        <p className={styles.sectionTitle}>Projects</p>
-                        {experience.projects.map((project, index) => {
-                            return <p key={project.id}>{`${index + 1}) ${project.description}`}</p>
-                        })}
+                        <h3 className={styles.sectionTitle}>Projects</h3>
+                        <ul>
+                            {experience.projects.map((project, index) => {
+                                return <li key={project.id}>{`${index + 1}) ${project.description}`}</li>
+                            })}
+                        </ul>
                     </div> : null
                 }
             </div>

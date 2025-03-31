@@ -12,9 +12,7 @@ const EXPERIENCES: Experience[] = [
         projects: [
             {
                 id: 1,
-                description: `Development of high performance and accessible websites for fintech 
-                companies with Vue.js, TypeScript and SCSS. All websites are testing 
-                for web accessibility standards.`
+                description: "Developing high-performance, accessible websites for fintech companies using Vue.js, TypeScript, and SCSS. Ensuring compliance with web accessibility standards through rigorous testing."
             }
         ]
     },
@@ -27,23 +25,15 @@ const EXPERIENCES: Experience[] = [
         projects: [
             {
                 id: 1,
-                description: `Training app, SaaS application where employees can watch online trainings,
-                then pass exam and after successfully passing exam they get unique certificate
-                witch is required by government for industry where they work.`
+                description: "Training App – A SaaS platform where employees complete online training, take exams, and receive unique government-required certificates for their industry."
             },
             {
                 id: 2,
-                description: `Time tracker. SaaS application tracks the time when 
-                employee works on project. Employer see detailed
-                log of tracked time, employee comments on work
-                and can create invoices for payment.`
+                description: "Time Tracker – A SaaS application that tracks employees' working hours on projects. Employers can view detailed time logs, employees can add work comments, and invoices can be generated for payments."
             },
             {
                 id: 3,
-                description: `Document sign app. SaaS application let users
-                to sign online documents. They can negotiate 
-                about document and then sign document online.
-                After sign both get online document with signature.`
+                description: "Document Sign App – A SaaS solution for online document signing. Users can negotiate terms before signing, and both parties receive a finalized, digitally signed document."
             }
         ]
     },
@@ -56,11 +46,7 @@ const EXPERIENCES: Experience[] = [
         projects: [
             {
                 id: 1,
-                description: `Developed an interactive web-based platform using
-                HTML, CSS, and JavaScript to help children test and
-                improve their math skills. The platform includes 
-                engaging exercises and games, providing instant
-                feedback to enhance learning.`
+                description: "Developed an interactive web platform using HTML, CSS, and JavaScript to help children improve their math skills. Designed engaging exercises and games with instant feedback to enhance learning."
             }
         ]
     },
