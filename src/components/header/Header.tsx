@@ -8,7 +8,7 @@ export const Header: FC = () => {
             <div className={styles.imageContainer}>
                 <Image
                     src="/hk.webp"
-                    alt="Hovhannes Keshishyan Profile Image"
+                    alt="Hovhannes Keshishyan, fullstack developer"
                     priority={true}
                     width={300}
                     height={300}
