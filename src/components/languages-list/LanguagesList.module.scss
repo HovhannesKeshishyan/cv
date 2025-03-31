@@ -1,19 +1,28 @@
 .languages {
-    .language {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 50px;
-        font-size: var(--font-size-md);
-        font-weight: var(--font-wight-bolder);
-        &:last-child {
-            margin-bottom: 0;
-        }
-        .languageName {
-            color: var(--text-color-primary);
-        }
-        .languageLevel {
-            color: var(--text-color-primary-2);
-        }
+  .language {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-wight-bolder);
+
+    .languagesList {
+      li {
+        list-style: none;
+      }
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .languageName {
+      color: var(--text-color-primary);
+    }
+
+    .languageLevel {
+      color: var(--text-color-primary-2);
+    }
+  }
 }
