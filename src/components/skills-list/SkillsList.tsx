@@ -35,7 +35,7 @@ export const SkillsList: FC = () => {
             return (
                 <div className={styles.skillItem} key={skill.name}>
                     <ImgSvgIcon iconName={skill.icon} alt={`${skill.name} icon`}/>
-                    <p className={styles.skillName}>{skill.name}</p>
+                    <h3 className={styles.skillName}>{skill.name}</h3>
                 </div>
             );
         });
