@@ -23,7 +23,8 @@
   --font-size-md-bigger: 2.9rem;
   --font-size-md: 2.4rem;
   --font-size-md-smaller: 1.8rem;
-  --font-size-sm: 1.2rem;
+  --font-size-base: 1.6rem;
+  --font-size-sm: 1.4rem;
 
   --font-wight-bolder: 700;
 
@@ -58,7 +59,7 @@ html {
 }
 
 body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: var(--body-bg);
 }
 
