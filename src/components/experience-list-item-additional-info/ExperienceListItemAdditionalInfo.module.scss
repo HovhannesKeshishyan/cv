@@ -1,6 +1,6 @@
 .experienceItemAdditionalInfo {
   color: var(--text-color-primary-2);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-weight: var(--font-wight-bolder);
 
   .additionalInfoTitle {
@@ -10,8 +10,8 @@
     gap: 0.8rem;
 
     svg {
-      width: 1.4rem;
-      height: 1.4rem;
+      width: 1.6rem;
+      height: 1.6rem;
       fill: var(--text-color-primary-2);
       transition: transform 0.2s ease-in-out;
     }
@@ -30,17 +30,16 @@
     .sectionTitle {
       font-weight: var(--font-wight-bolder);
       font-size: var(--font-size-md-smaller);
+      font-style: italic;
+      margin-bottom: 0.5rem;
     }
 
     .projects {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
 
       ul {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1.5rem;
 
         li {
           list-style: none;
