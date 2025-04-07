@@ -10,6 +10,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+    metadataBase: new URL(siteUrl),
     title: metaTitle,
     description: metaDescription,
     robots: "index, follow",
