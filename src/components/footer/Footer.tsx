@@ -3,7 +3,7 @@ import {FC} from "react";
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {FaFacebook} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 import type {SocialMedia} from "@/types";
 
@@ -28,7 +28,7 @@ const socialMedia: SocialMedia[] = [
     {
         name: "twitter",
         href: "https://twitter.com/hovo1991",
-        icon: FaTwitter
+        icon: FaXTwitter
     },
 ];
 
