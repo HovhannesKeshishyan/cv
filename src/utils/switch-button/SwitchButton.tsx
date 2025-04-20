@@ -16,6 +16,7 @@ interface SwitchButtonProps {
 
 export const SwitchButton: FC<SwitchButtonProps> = (props) => {
     const [isClient, setIsClient] = useState(false);
+    const [mounted, setMounted] = useState(false)
     const isDark = props.theme === "dark";
 
     let className = styles.switchButton;
@@ -24,6 +25,13 @@ export const SwitchButton: FC<SwitchButtonProps> = (props) => {
     useEffect(() => {
         setIsClient(true);
     }, []);
+
+    useEffect(() => {
+        if (mounted || props.theme !== "light") return;
+        setMounted(true);
+        const meta = document.querySelector("meta[name='theme-color']") as HTMLMetaElement;
+        meta.content = "#3294e2";
+    }, [mounted, props.theme])
 
     if (!isClient) return;
 
