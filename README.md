@@ -35,9 +35,9 @@ npm run build
 
 ### Live Demo
 
-[hovhanneskeshishyan.vercel.app](https://hovhanneskeshishyan.vercel.app/)
+[hovhanneskeshishyan.vercel.app](https://hovhanneskeshishyan.vercel.app)
 
 
 ### Github URL
 
-[github.com/HovhannesKeshishyan/cv-react](https://github.com/HovhannesKeshishyan/cv-react)
+[github.com/HovhannesKeshishyan/cv](https://github.com/HovhannesKeshishyan/cv)
