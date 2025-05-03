@@ -5,9 +5,15 @@
     grid-gap: 3rem 10rem;
 
     .skillItem {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
+      list-style: none;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        width: fit-content;
+      }
 
       img {
         width: 30px;
