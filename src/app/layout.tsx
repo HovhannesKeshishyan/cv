@@ -1,8 +1,16 @@
 import type {Metadata, Viewport} from "next";
 import type {ReactNode} from "react";
+import {ThemeProvider} from "@/components/theme-provider/theme-provider";
+
+import { Roboto } from "next/font/google";
 import "./globals.scss";
 
-import {ThemeProvider} from "@/components/theme-provider/theme-provider";
+const roboto = Roboto({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap"
+})
+
 import {siteUrl, metaDescription, metaTitle} from "@/constants/metadata";
 
 export const viewport: Viewport = {
@@ -45,7 +53,7 @@ interface Props {
 export default function RootLayout({children}: Props) {
     return (
         <html lang="en" suppressHydrationWarning>
-        <body>
+        <body className={roboto.className}>
         <ThemeProvider
             attribute="class"
             enableSystem={false}
