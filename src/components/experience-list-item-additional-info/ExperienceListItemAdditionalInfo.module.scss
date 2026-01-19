@@ -1,7 +1,7 @@
 .experienceItemAdditionalInfo {
   color: var(--text-color-primary-2);
   font-size: var(--font-size-base);
-  font-weight: var(--font-wight-bolder);
+  font-weight: var(--font-weight-bolder);
 
   .additionalInfoTitle {
     cursor: pointer;
@@ -28,7 +28,7 @@
     padding-top: 1rem;
 
     .sectionTitle {
-      font-weight: var(--font-wight-bolder);
+      font-weight: var(--font-weight-bolder);
       font-size: var(--font-size-md-smaller);
       font-style: italic;
       margin-bottom: 0.5rem;
@@ -51,7 +51,7 @@
   &.opened {
     .additionalInfoTitle {
       svg {
-        transform: rotate(180deg);
+        transform: scale(-1);
       }
     }
 

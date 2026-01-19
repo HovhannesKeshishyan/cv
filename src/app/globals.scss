@@ -1,21 +1,26 @@
 :root {
   color-scheme: light dark;
 
+  // colors
   --app-green: #40e0d0;
   --app-black: #000;
   --app-white: #fff;
 
   --header-bg: #3294e2;
-  --footer-bg: #1e3a50;
+
+  --footer-row-1-bg: #3294e2;
+  --footer-row-2-bg: #1e3a50;
+
   --body-bg: #525659;
   --main-bg-color: var(--app-white);
+
   --section-title-color: var(--app-black);
 
-  // --text-color-primary: #0b9de8;
   --text-color-primary: #0479b4;
   --text-color-primary-2: var(--app-black);
   --text-color-secondary: #808080;
 
+  // font-size
   --font-size-extra-big: 4.8rem;
   --font-size-big: 3.2rem;
   --font-size-md-bigger: 2.9rem;
@@ -24,7 +29,7 @@
   --font-size-base: 1.6rem;
   --font-size-sm: 1.4rem;
 
-  --font-wight-bolder: 700;
+  --font-weight-bolder: 700;
 
   --app-theme-transition: background-color 0.3s linear;
 
@@ -36,7 +41,10 @@
 
 .dark {
   --header-bg: #057267;
-  --footer-bg: #057267;
+
+  --footer-row-1-bg: #057267;
+  --footer-row-2-bg: var(--app-black);
+
   --text-color-primary: var(--app-green);
   --main-bg-color: var(--app-black);
   --section-title-color: var(--app-white);
@@ -74,7 +82,7 @@ body {
 
 h2.app-section-title {
   font-size: var(--font-size-md);
-  font-weight: var(--font-wight-bolder);
+  font-weight: var(--font-weight-bolder);
   color: var(--section-title-color);
   margin-bottom: 50px;
 }
