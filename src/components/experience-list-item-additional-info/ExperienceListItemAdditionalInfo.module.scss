@@ -51,7 +51,7 @@
   &.opened {
     .additionalInfoTitle {
       svg {
-        transform: rotate(180deg);
+        transform: scale(-1);
       }
     }
 
