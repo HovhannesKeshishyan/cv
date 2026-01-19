@@ -9,7 +9,7 @@ import type {SocialMedia} from "@/types";
 
 import styles from "./Footer.module.scss";
 
-const socialMedia: SocialMedia[] = [
+const socialLinks: SocialMedia[] = [
     {
         name: "linkedin",
         href: "https://www.linkedin.com/in/hovhannes-keshishyan",
@@ -35,25 +35,26 @@ const socialMedia: SocialMedia[] = [
 export const Footer: FC = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.socialMedia}>
-                {socialMedia.map((sm) => {
-                    return (
-                        <a
-                            href={sm.href}
-                            target="_blank"
-                            aria-label={`${sm.name} link`}
-                            key={sm.name}
-                        >
-                            <sm.icon/>
-                        </a>
-                    );
-                })}
+            <div className={`${styles.footerRow} ${styles.footerRow1}`}>
+                <h3>Contacts</h3>
+                <ul className={styles.socialMedia}>
+                    {socialLinks.map(item => {
+                        return (
+                            <li key={item.name}>
+                                <a href={item.href}
+                                   target="_blank"
+                                   aria-label={`${item.name} link`}
+                                   rel="noreferer, noopener">
+                                    <item.icon/>
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
-
-            <div className={styles.copyrighting}>
-                <span>©</span>
-                <span>{new Date().getFullYear()}</span>
+            <div className={`${styles.footerRow} ${styles.footerRow2}`}>
+                <span>© {new Date().getFullYear()}</span>
             </div>
         </footer>
-    );
-};
+    )
+}
