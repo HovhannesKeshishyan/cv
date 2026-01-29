@@ -1,4 +1,4 @@
-.switchButton {
+button.switchButton {
   position: absolute;
   top: 0;
   right: 0;
@@ -11,6 +11,8 @@
   border-radius: 1.5rem;
   user-select: none;
   margin: 0 0 0 auto;
+  background-color: transparent;
+  outline-offset: 0.2rem;
 
   img {
     position: absolute;

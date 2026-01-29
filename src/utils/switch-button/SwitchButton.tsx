@@ -25,13 +25,15 @@ export const SwitchButton: FC<SwitchButtonProps> = (props) => {
     if (!isClient) return;
 
     return (
-        <div onClick={props.toggleTheme} className={className}>
+        <button type="button"
+                onClick={props.toggleTheme}
+                className={className} aria-label={`Toggle theme to ${isDark ? 'light' : 'dark'}`}>
             <Image
                 src={isDark ? MoonIcon : SunIcon}
-                alt={isDark ? "Moon icon" : "Sun icon"}
+                alt={isDark ? "Dark theme" : "light theme"}
                 width={24}
                 height={24}
             />
-        </div>
+        </button>
     );
 };
