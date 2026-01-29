@@ -14,7 +14,7 @@ interface ExperienceDurationProp {
 }
 
 export const ExperienceDuration: FC<ExperienceDurationProp> = ({experience}) => {
-    const diff = useDateDiff(experience.year.from, experience.year.to);
+    const diff = useDateDiff(experience.duration.from, experience.duration.to);
     return (
         <>
             <Image

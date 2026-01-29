@@ -1,11 +1,10 @@
-import {IconType} from "react-icons";
+import type {IconType} from "react-icons";
 
 export interface Contacts {
     email: string;
     phone: string;
-    phone_label?: string;
     address: string;
-    googleMapAddress?: string;
+    googleMapAddress: string;
 }
 
 export interface SocialMedia {
@@ -22,7 +21,7 @@ interface Project {
 export interface Experience {
     id: string;
     company: string;
-    year: { from: string; to: string };
+    duration: { from: string; to: string };
     role: string;
     technologies: Technology[];
     projects: Project[];

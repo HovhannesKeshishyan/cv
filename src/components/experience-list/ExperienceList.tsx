@@ -6,7 +6,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "egs",
         company: "Energize Global Services Armenia",
-        year: {from: "2023-04-17", to: "Present"},
+        duration: {from: "2023-04-17", to: "Present"},
         role: "Frontend developer",
         technologies: ["Vue", "TypeScript", "SCSS", "LESS"],
         projects: [
@@ -19,7 +19,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "willing",
         company: "Willing and Able LLC",
-        year: {from: "2020-12-09", to: "2023-04-14"},
+        duration: {from: "2020-12-09", to: "2023-04-14"},
         role: "Frontend developer",
         technologies: ["Vue", "VUEX", "Vue Router", "JavaScript", "TypeScript", "Angular", "SCSS", "Webpack"],
         projects: [
@@ -40,7 +40,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "compass_2",
         company: "Compass LLC",
-        year: {from: "2019-08-01", to: "2020-09-01"},
+        duration: {from: "2019-08-01", to: "2020-09-01"},
         role: "Frontend developer",
         technologies: ["HTML", "CSS", "JavaScript"],
         projects: [
@@ -53,7 +53,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "compass_1",
         company: "Compass LLC",
-        year: {from: "2017-08-01", to: "2019-08-01"},
+        duration: {from: "2017-08-01", to: "2019-08-01"},
         projects: [],
         technologies: ["Articulate Storyline"],
         role: "Articulate Storyline developer",
@@ -62,7 +62,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "stuyg",
         company: "Stuyg LLC",
-        year: {from: "2014-04-01", to: "2016-10-01"},
+        duration: {from: "2014-04-01", to: "2016-10-01"},
         role: "Accountant",
         projects: [],
         technologies: [],
@@ -71,7 +71,7 @@ const EXPERIENCES: Experience[] = [
     {
         id: "mag",
         company: "M.A.G. Shinanyut LLC",
-        year: {from: "2012-08-01", to: "2013-08-01"},
+        duration: {from: "2012-08-01", to: "2013-08-01"},
         role: "Accountant",
         projects: [],
         technologies: [],

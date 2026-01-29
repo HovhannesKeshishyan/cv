@@ -21,7 +21,7 @@ export const ExperienceListItem: FC<Props> = ({experience}) => {
             <div className={styles.companyName}>{experience.company}</div>
             <div className={styles.year}>
           <span>
-            {getExperiencePeriod(experience.year.from, experience.year.to)}
+            {getExperiencePeriod(experience.duration.from, experience.duration.to)}
           </span>
                 <ExperienceDuration experience={experience}/>
             </div>
