@@ -1,7 +1,7 @@
 import type {FC} from "react";
 
 import {ExperienceDuration} from "../experience-duration/ExperienceDuration";
-import {getExperiencePeriod} from "@/services/helpers";
+import {getExperiencePeriod} from "@/helpers";
 import {
     ExperienceListItemAdditionalInfo
 } from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo";
