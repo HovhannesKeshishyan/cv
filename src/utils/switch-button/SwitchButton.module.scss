@@ -3,21 +3,21 @@
   top: 0;
   right: 0;
   display: flex;
-  width: 58px;
-  height: 28px;
+  width: 5.8rem;
+  height: 2.8rem;
   cursor: pointer;
-  padding: 2px;
-  border: 2px solid #cecece;
-  border-radius: 15px;
+  padding: 0.2rem;
+  border: 0.2rem solid #cecece;
+  border-radius: 1.5rem;
   user-select: none;
   margin: 0 0 0 auto;
 
   img {
     position: absolute;
     top: 0;
-    right: 28px;
-    width: 24px;
-    height: 24px;
+    right: 2.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
     transition: right 0.3s linear;
   }
 }

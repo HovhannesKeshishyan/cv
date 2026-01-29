@@ -6,7 +6,7 @@
   .contactItem {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
     &:last-child {
       margin-bottom: 0;
     }
@@ -29,7 +29,7 @@
   .contacts {
     .contactItem {
       span {
-        width: 100px;
+        width: 10rem;
       }
     }
   }
