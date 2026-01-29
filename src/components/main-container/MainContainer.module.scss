@@ -3,3 +3,36 @@
   background-color: var(--main-bg-color);
   transition: var(--app-theme-transition);
 }
+
+.contactAndEducationWrapper,
+.experienceAndLanguagesWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+
+  .verticalLayoutSeparatorLine {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactAndEducationWrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+
+    .verticalLayoutSeparatorLine {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experienceAndLanguagesWrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+
+    .verticalLayoutSeparatorLine {
+      display: block;
+    }
+  }
+}

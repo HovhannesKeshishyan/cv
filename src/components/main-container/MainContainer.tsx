@@ -11,7 +11,6 @@ import {SkillsList} from "@/components/skills-list/SkillsList";
 
 import {SwitchButton} from "@/utils/switch-button/SwitchButton";
 import {SeparatorLine} from "@/utils/separator-line/SeparatorLine";
-import {TwoColumns} from "@/utils/the-columns/TwoColumns";
 
 import styles from "./MainContainer.module.scss";
 
@@ -29,17 +28,18 @@ export const MainContainer: FC = () => {
 
             <SeparatorLine/>
 
-            <TwoColumns>
+            <div className={styles.contactAndEducationWrapper}>
                 <ContactsList/>
+                <SeparatorLine className={styles.verticalLayoutSeparatorLine}/>
                 <EducationInfo/>
-            </TwoColumns>
+            </div>
 
             <SeparatorLine/>
 
-            <TwoColumns columnsBreakpoint={600}>
+            <div className={styles.experienceAndLanguagesWrapper}>
                 <ExperienceList/>
                 <LanguagesList/>
-            </TwoColumns>
+            </div>
 
             <SeparatorLine/>
 
