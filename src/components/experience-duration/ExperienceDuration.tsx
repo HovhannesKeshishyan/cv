@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import {Tooltip as ReactTooltip} from "react-tooltip";
 
-import {useDateDiff} from "@/hooks/useDateDiff";
+import {calcDateDiff} from "@/helpers/calcDateDiff";
 import InfoIcon from "@/assets/icons/info.svg";
 import type {Experience} from "@/types";
 
@@ -14,7 +14,7 @@ interface ExperienceDurationProp {
 }
 
 export const ExperienceDuration: FC<ExperienceDurationProp> = ({experience}) => {
-    const diff = useDateDiff(experience.duration.from, experience.duration.to);
+    const diff = calcDateDiff(experience.duration.from, experience.duration.to);
     return (
         <>
             <Image

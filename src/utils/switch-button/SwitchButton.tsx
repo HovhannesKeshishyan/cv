@@ -1,5 +1,6 @@
-import {type FC, useState, useEffect} from "react";
+import type {FC} from "react";
 import Image from "next/image";
+import {useIsClient} from "@/hooks/useIsClient";
 
 import SunIcon from "@/assets/icons/sun.svg";
 import MoonIcon from "@/assets/icons/moon.svg";
@@ -12,17 +13,13 @@ interface SwitchButtonProps {
 }
 
 export const SwitchButton: FC<SwitchButtonProps> = (props) => {
-    const [isClient, setIsClient] = useState(false);
+    const isClient = useIsClient();
+    if (!isClient) return null;
+
     const isDark = props.theme === "dark";
 
     let className = styles.switchButton;
     if (isDark) className += ` ${styles.darkTheme}`;
-
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
-
-    if (!isClient) return;
 
     return (
         <button type="button"
