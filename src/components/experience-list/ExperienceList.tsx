@@ -1,4 +1,4 @@
-import {FC} from "react";
+import type {FC} from "react";
 import {ExperienceListItem} from "@/components/experience-list-item/ExperinceListItem";
 import type {Experience} from "@/types";
 

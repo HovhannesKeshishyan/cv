@@ -1,4 +1,4 @@
-import {FC} from "react";
+import type {FC} from "react";
 import styles from "./ContactsList.module.scss";
 import type {Contacts} from "@/types";
 

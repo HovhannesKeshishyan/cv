@@ -1,8 +1,5 @@
-"use client"
-
-import Image from "next/image";
-
 import {type FC, useState, useEffect} from "react";
+import Image from "next/image";
 
 import SunIcon from "@/assets/icons/sun.svg";
 import MoonIcon from "@/assets/icons/moon.svg";

@@ -1,4 +1,4 @@
-import {FC} from "react";
+import type {FC} from "react";
 
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
