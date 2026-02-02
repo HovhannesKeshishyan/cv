@@ -1,3 +1,5 @@
+@use "@/app/styles/_breakpoints" as breakpoints;
+
 .main {
   padding: 0 10%;
   background-color: var(--main-bg-color);
@@ -15,7 +17,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: breakpoints.$desktop) {
   .contactAndEducationWrapper {
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -26,7 +28,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: breakpoints.$tablet) {
   .experienceAndLanguagesWrapper {
     grid-template-columns: 1fr;
     grid-gap: 0;

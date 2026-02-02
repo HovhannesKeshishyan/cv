@@ -1,3 +1,5 @@
+@use "@/app/styles/_breakpoints" as breakpoints;
+
 .skillsList {
   .skillsContainer {
     display: grid;
@@ -31,7 +33,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: breakpoints.$tablet) {
   .skillsList {
     .skillsContainer {
       .skillItem {
@@ -48,7 +50,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: breakpoints.$tablet-small) {
   .skillsList {
     .skillsContainer {
       grid-template-columns: 1fr;

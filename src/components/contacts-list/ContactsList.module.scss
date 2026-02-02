@@ -1,3 +1,5 @@
+@use "@/app/styles/_breakpoints" as breakpoints;
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -25,7 +27,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: breakpoints.$desktop) {
   .contacts {
     .contactItem {
       span {
@@ -35,7 +37,7 @@
   }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: breakpoints.$tablet) {
   .contacts {
     .contactItem {
       a {
@@ -45,7 +47,7 @@
   }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: breakpoints.$mobile) {
   .contacts {
     .contactItem {
       a {
