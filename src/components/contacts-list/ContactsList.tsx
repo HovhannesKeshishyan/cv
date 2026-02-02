@@ -1,13 +1,7 @@
-import {FC} from "react";
+import type {FC} from "react";
 import styles from "./ContactsList.module.scss";
-import type {Contacts} from "@/types";
+import {CONTACTS as contacts} from "@/data/contacts";
 
-const contacts: Contacts = {
-    email: "hovhanneskeshishyan@gmail.com",
-    phone: "+37498088092",
-    address: "Abovyan, Armenia",
-    googleMapAddress: "https://goo.gl/maps/HK46jouRBXPehNY18"
-};
 
 export const ContactsList: FC = () => {
     return (

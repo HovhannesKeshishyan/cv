@@ -1,7 +1,7 @@
 import type {FC} from "react";
 
 import {ExperienceDuration} from "../experience-duration/ExperienceDuration";
-import {getExperiencePeriod} from "@/services/helpers";
+import {getExperiencePeriod} from "@/helpers/getExperiencePeriod";
 import {
     ExperienceListItemAdditionalInfo
 } from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo";
@@ -21,7 +21,7 @@ export const ExperienceListItem: FC<Props> = ({experience}) => {
             <div className={styles.companyName}>{experience.company}</div>
             <div className={styles.year}>
           <span>
-            {getExperiencePeriod(experience.year.from, experience.year.to)}
+            {getExperiencePeriod(experience.duration.from, experience.duration.to)}
           </span>
                 <ExperienceDuration experience={experience}/>
             </div>

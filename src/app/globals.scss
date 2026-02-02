@@ -1,3 +1,5 @@
+@use "@/app/styles/_breakpoints" as breakpoints;
+
 :root {
   color-scheme: light dark;
 
@@ -32,11 +34,6 @@
   --font-weight-bolder: 700;
 
   --app-theme-transition: background-color 0.3s linear;
-
-  //screen
-  --screen-sm: 510px;
-  --screen-md: 720px;
-  --screen-lg: 1200px;
 }
 
 .dark {
@@ -66,23 +63,25 @@ html {
 
 body {
   background-color: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 5rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: breakpoints.$desktop) {
   #root {
     padding: 0;
   }
 }
 
-h2.app-section-title {
+.app-section-title {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bolder);
   color: var(--section-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }

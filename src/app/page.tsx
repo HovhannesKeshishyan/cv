@@ -1,5 +1,3 @@
-"use client"
-
 import {Header} from "@/components/header/Header";
 import {MainContainer} from "@/components/main-container/MainContainer";
 import {Footer} from "@/components/footer/Footer";
@@ -10,7 +8,7 @@ import styles from "./page.module.css";
 export default function App() {
     return (
         <div className={styles.App}>
-            <ColorTheme />
+            <ColorTheme/>
             <Header/>
             <MainContainer/>
             <Footer/>

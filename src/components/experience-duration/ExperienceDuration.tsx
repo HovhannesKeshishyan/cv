@@ -1,9 +1,9 @@
-import {FC} from "react";
+import type {FC} from "react";
 import Image from "next/image";
 
 import {Tooltip as ReactTooltip} from "react-tooltip";
 
-import {useDateDiff} from "@/hooks/useDateDiff";
+import {calcDateDiff} from "@/helpers/calcDateDiff";
 import InfoIcon from "@/assets/icons/info.svg";
 import type {Experience} from "@/types";
 
@@ -14,7 +14,7 @@ interface ExperienceDurationProp {
 }
 
 export const ExperienceDuration: FC<ExperienceDurationProp> = ({experience}) => {
-    const diff = useDateDiff(experience.year.from, experience.year.to);
+    const diff = calcDateDiff(experience.duration.from, experience.duration.to);
     return (
         <>
             <Image

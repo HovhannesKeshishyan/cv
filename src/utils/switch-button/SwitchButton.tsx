@@ -1,11 +1,6 @@
-"use client"
-
-import Image from "next/image";
-
-import {type FC, useState, useEffect} from "react";
-
-import SunIcon from "@/assets/icons/sun.svg";
-import MoonIcon from "@/assets/icons/moon.svg";
+import type {FC} from "react";
+import {useIsClient} from "@/hooks/useIsClient";
+import {MdLightMode, MdDarkMode} from "react-icons/md";
 
 import styles from "./SwitchButton.module.scss";
 
@@ -15,26 +10,21 @@ interface SwitchButtonProps {
 }
 
 export const SwitchButton: FC<SwitchButtonProps> = (props) => {
-    const [isClient, setIsClient] = useState(false);
+    const isClient = useIsClient();
+    if (!isClient) return null;
+
     const isDark = props.theme === "dark";
 
     let className = styles.switchButton;
     if (isDark) className += ` ${styles.darkTheme}`;
 
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
-
-    if (!isClient) return;
-
     return (
-        <div onClick={props.toggleTheme} className={className}>
-            <Image
-                src={isDark ? MoonIcon : SunIcon}
-                alt={isDark ? "Moon icon" : "Sun icon"}
-                width={24}
-                height={24}
-            />
-        </div>
+        <button type="button"
+                onClick={props.toggleTheme}
+                className={className} aria-label={`Toggle theme to ${isDark ? 'light' : 'dark'}`}>
+            <span className={styles.iconWrapper}>
+                {isDark ? <MdDarkMode/> : <MdLightMode/>}
+            </span>
+        </button>
     );
 };

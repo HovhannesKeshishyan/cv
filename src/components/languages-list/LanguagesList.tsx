@@ -1,11 +1,6 @@
-import {FC} from "react";
+import type {FC} from "react";
 import styles from "./LanguagesList.module.scss";
-
-const LANGUAGES = [
-    {language: "Armenian", level: "Native"},
-    {language: "Russian", level: "Full proficiency"},
-    {language: "English", level: "Advanced"},
-];
+import {LANGUAGES} from "@/data/languages";
 
 export const LanguagesList: FC = () => {
     const languagesList = LANGUAGES.map((language) => {
