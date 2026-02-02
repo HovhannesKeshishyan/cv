@@ -3,29 +3,35 @@ button.switchButton {
   top: 0;
   right: 0;
   display: flex;
+  align-items: center;
   width: 5.8rem;
   height: 2.8rem;
   cursor: pointer;
   padding: 0.2rem;
-  border: 0.2rem solid #cecece;
+  border: 0.2rem solid var(--app-white);
   border-radius: 1.5rem;
   user-select: none;
   margin: 0 0 0 auto;
   background-color: transparent;
   outline-offset: 0.2rem;
+  font-size: 2.4rem;
 
-  img {
+  .iconWrapper {
     position: absolute;
     top: 0;
     right: 2.8rem;
     width: 2.4rem;
     height: 2.4rem;
     transition: right 0.3s linear;
+    color: var(--app-white);
   }
 }
 
 .darkTheme.switchButton {
-  img {
+  border-color: var(--app-black);
+
+  .iconWrapper {
     right: 0;
+    color: var(--app-black);
   }
 }
