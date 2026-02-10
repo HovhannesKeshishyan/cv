@@ -54,15 +54,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: inherit;
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
   background-color: var(--body-bg);
+  font: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -77,6 +77,10 @@ body {
   #root {
     padding: 0;
   }
+}
+
+.position-relative {
+  position: relative;
 }
 
 .app-section-title {
