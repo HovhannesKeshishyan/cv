@@ -1,10 +1,7 @@
 import type {FC} from "react";
-
-import {ExperienceDuration} from "../experience-duration/ExperienceDuration";
+import {ExperienceDuration} from "./experience-duration/ExperienceDuration";
+import {ExperienceAdditionalInfo} from "./experience-additional-info/ExperienceAdditionalInfo";
 import {getExperiencePeriod} from "@/helpers/getExperiencePeriod";
-import {
-    ExperienceListItemAdditionalInfo
-} from "@/components/experience-list-item-additional-info/ExperinceListItemAdditionalInfo";
 
 import styles from "./ExperienceListItem.module.scss";
 
@@ -25,7 +22,7 @@ export const ExperienceListItem: FC<Props> = ({experience}) => {
           </span>
                 <ExperienceDuration experience={experience}/>
             </div>
-            <ExperienceListItemAdditionalInfo experience={experience}/>
+            <ExperienceAdditionalInfo experience={experience}/>
         </div>
     )
 };

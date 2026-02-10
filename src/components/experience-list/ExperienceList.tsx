@@ -1,5 +1,5 @@
 import type {FC} from "react";
-import {ExperienceListItem} from "@/components/experience-list-item/ExperinceListItem";
+import {ExperienceListItem} from "./experience-list-item/ExperinceListItem";
 import {EXPERIENCES} from "@/data/experiences";
 
 export const ExperienceList: FC = () => {
