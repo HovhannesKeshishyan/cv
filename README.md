@@ -40,4 +40,4 @@ npm run build
 
 ### Github URL
 
-[github.com/HovhannesKeshishyan/cv](https://github.com/HovhannesKeshishyan/cv)
+[github.com/hovhanneskeshishyan/cv](https://github.com/hovhanneskeshishyan/cv)
