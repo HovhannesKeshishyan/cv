@@ -22,9 +22,7 @@ export const SwitchButton: FC<SwitchButtonProps> = (props) => {
         <button type="button"
                 onClick={props.toggleTheme}
                 className={className} aria-label={`Toggle theme to ${isDark ? 'light' : 'dark'}`}>
-            <span className={styles.iconWrapper}>
-                {isDark ? <MdDarkMode/> : <MdLightMode/>}
-            </span>
+            {isDark ? <MdDarkMode/> : <MdLightMode/>}
         </button>
     );
 };

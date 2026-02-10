@@ -2,14 +2,14 @@ import {type FC, useState} from "react";
 
 import {FaChevronDown} from "react-icons/fa";
 
-import styles from "./ExperienceListItemAdditionalInfo.module.scss";
+import styles from "./ExperienceAdditionalInfo.module.scss";
 import type {Experience} from "@/types";
 
 interface Props {
     experience: Experience;
 }
 
-export const ExperienceListItemAdditionalInfo: FC<Props> = ({experience}) => {
+export const ExperienceAdditionalInfo: FC<Props> = ({experience}) => {
     const [opened, setOpened] = useState(false);
 
     const toggleAdditionalInfo = () => {
