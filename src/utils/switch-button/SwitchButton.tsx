@@ -1,6 +1,7 @@
 import type {FC} from "react";
 import {useIsClient} from "@/hooks/useIsClient";
-import {MdLightMode, MdDarkMode} from "react-icons/md";
+import {MdLightMode} from "react-icons/md";
+import {BsStars} from "react-icons/bs";
 
 import styles from "./SwitchButton.module.scss";
 
@@ -22,7 +23,7 @@ export const SwitchButton: FC<SwitchButtonProps> = (props) => {
         <button type="button"
                 onClick={props.toggleTheme}
                 className={className} aria-label={`Toggle theme to ${isDark ? 'light' : 'dark'}`}>
-            {isDark ? <MdDarkMode/> : <MdLightMode/>}
+            {isDark ? <BsStars/> : <MdLightMode/>}
         </button>
     );
 };
