@@ -38,6 +38,7 @@ export const MainContainer: FC = () => {
 
             <div className={styles.experienceAndLanguagesWrapper}>
                 <ExperienceList/>
+                <SeparatorLine className={styles.verticalLayoutSeparatorLine}/>
                 <LanguagesList/>
             </div>
 
