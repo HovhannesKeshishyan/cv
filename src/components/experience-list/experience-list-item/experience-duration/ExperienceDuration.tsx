@@ -1,4 +1,4 @@
-import type {FC} from "react";
+import {type FC, useState, useEffect} from "react";
 import Image from "next/image";
 
 import {Tooltip as ReactTooltip} from "react-tooltip";
@@ -14,21 +14,28 @@ interface ExperienceDurationProp {
 }
 
 export const ExperienceDuration: FC<ExperienceDurationProp> = ({experience}) => {
-    const diff = calcDateDiff(experience.duration.from, experience.duration.to);
+    const [diff, setDiff] = useState<string>("");
+    const {from, to} = experience.duration;
+    const id = `duration-${experience.id}`;
+
+    useEffect(() => {
+        setDiff(calcDateDiff(from, to))
+    }, [from, to]);
+
     return (
         <>
             <Image
                 src={InfoIcon}
                 className={styles.infoIcon}
-                alt="Information icon"
+                alt={`Experienced duration is ${diff}`}
                 width={20}
                 height={20}
-                data-tooltip-id={`duration-${experience.id}`}
+                data-tooltip-id={id}
                 data-tooltip-content={diff}
                 data-tooltip-place="top"
                 data-tooltip-variant="info"
             />
-            <ReactTooltip id={`duration-${experience.id}`}/>
+            <ReactTooltip id={id}/>
         </>
     );
 };
