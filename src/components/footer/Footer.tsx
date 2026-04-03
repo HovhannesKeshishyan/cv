@@ -23,6 +23,7 @@ export const Footer: FC = () => {
                 </ul>
             </div>
             <div className={`${styles.footerRow} ${styles.footerRow2}`}>
+                <a href="/hovhannes_keshishyan.pdf" download className={styles.downloadPDF}>Download PDF</a>
                 <span>© {new Date().getFullYear()}</span>
             </div>
         </footer>
