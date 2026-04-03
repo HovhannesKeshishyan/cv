@@ -41,6 +41,7 @@ export type Technology =
     | "Redux"
     | "Angular"
     | "Webpack"
+    | "AEM"
     | "SASS"
     | "SCSS"
     | "LESS"

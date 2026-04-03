@@ -38,10 +38,9 @@ export const ExperienceAdditionalInfo: FC<Props> = ({experience}) => {
 
                 {
                     experience.projects?.length ? <div className={styles.projects}>
-                        <h3 className={styles.sectionTitle}>Projects</h3>
                         <ul>
-                            {experience.projects.map((project, index) => {
-                                return <li key={project.id}>{`${index + 1}) ${project.description}`}</li>
+                            {experience.projects.map(project => {
+                                return <li key={project.id}>{project.description}</li>
                             })}
                         </ul>
                     </div> : null
