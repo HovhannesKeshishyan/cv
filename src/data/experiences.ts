@@ -6,11 +6,21 @@ export const EXPERIENCES: Experience[] = [
         company: "Energize Global Services Armenia",
         duration: {from: "2023-04-17", to: "Present"},
         role: "Frontend developer",
-        technologies: ["Vue", "TypeScript", "SCSS", "LESS"],
+        technologies: ["Vue", "JavaScript", "TypeScript", "AEM", "SCSS", "LESS"],
         projects: [
             {
                 id: 1,
-                description: "Developing high-performance, accessible websites for fintech companies using Vue.js, TypeScript, and SCSS. Ensuring compliance with web accessibility standards through rigorous testing."
+                description: `Architecting high-performance fintech platforms using Vue.js, JavaScript, TypeScript and AEM,
+                 with a specific focus on performance optimization and scalable component design.`
+            },
+            {
+                id: 2,
+                description: `Implementation of advanced web accessibility (a11y) features, including ARIA management, 
+                keyboard navigation protocols, and focus-visible styling to meet strict WCAG standards.`
+            },
+            {
+                id: 3,
+                description: `Engineering complex UI logic and maintained high-quality frontend architecture.`
             }
         ]
     },
@@ -18,20 +28,21 @@ export const EXPERIENCES: Experience[] = [
         id: "willing",
         company: "Willing and Able LLC",
         duration: {from: "2020-12-09", to: "2023-04-14"},
-        role: "Frontend developer",
-        technologies: ["Vue", "VUEX", "Vue Router", "JavaScript", "TypeScript", "Angular", "SCSS", "Webpack"],
+        role: "Frontend Developer",
+        technologies: ["React", "Redux", "Vue", "VUEX", "Vue Router", "JavaScript", "TypeScript", "Angular", "SCSS", "Webpack"],
         projects: [
             {
                 id: 1,
-                description: "Training App – A SaaS platform where employees complete online training, take exams, and receive unique government-required certificates for their industry."
+                description: "Architected the frontend for a certification training platform, building exam flows and progress tracking."
             },
             {
                 id: 2,
-                description: "Time Tracker – A SaaS application that tracks employees' working hours on projects. Employers can view detailed time logs, employees can add work comments, and invoices can be generated for payments."
+                description: `Built the time-logging and invoice generation UI, 
+                integrating with backend APIs to support employer reporting workflows.`
             },
             {
                 id: 3,
-                description: "Document Sign App – A SaaS solution for online document signing. Users can negotiate terms before signing, and both parties receive a finalized, digitally signed document."
+                description: "Developed a multi-party document signing flow with real-time negotiation state management."
             }
         ]
     },
@@ -39,12 +50,14 @@ export const EXPERIENCES: Experience[] = [
         id: "compass_2",
         company: "Compass LLC",
         duration: {from: "2019-08-01", to: "2020-09-01"},
-        role: "Frontend developer",
+        role: "Frontend Developer",
         technologies: ["HTML", "CSS", "JavaScript"],
         projects: [
             {
                 id: 1,
-                description: "Developed an interactive web platform using HTML, CSS, and JavaScript to help children improve their math skills. Designed engaging exercises and games with instant feedback to enhance learning."
+                description: `Owned the full frontend of an educational math platform 
+                for children in grades 1–4, including UI architecture, game 
+                logic, and cross-browser compatibility.`
             }
         ]
     },
@@ -54,7 +67,7 @@ export const EXPERIENCES: Experience[] = [
         duration: {from: "2017-08-01", to: "2019-08-01"},
         projects: [],
         technologies: ["Articulate Storyline"],
-        role: "Articulate Storyline developer",
+        role: "Articulate Storyline Developer",
         hide: true
     },
     {
