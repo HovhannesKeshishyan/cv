@@ -19,8 +19,8 @@ export const Header: FC = () => {
                 <div>
                     <h1>Hovhannes Keshishyan</h1>
                 </div>
-                <div className={styles.currentJobBlock}>
-                    <h2>JavaScript Developer</h2>
+                <div className={styles.currentPositionBlock}>
+                    <h2>Senior Frontend Developer</h2>
                 </div>
             </div>
         </header>
