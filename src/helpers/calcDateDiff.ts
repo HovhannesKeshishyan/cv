@@ -11,8 +11,14 @@ export const calcDateDiff = (from: string, to: string) => {
             ? DateTime.local().startOf("day")
             : DateTime.fromISO(to);
     const diff = toDate.diff(fromDate, ["years", "months"]).toObject();
-    const years = Math.floor(diff.years || 0);
-    const months = Math.floor(diff.months || 0);
+    let years = Math.floor(diff.years || 0);
+    let months = Math.round(diff.months || 0);
+
+    // Roll 12 rounded months into a full year to avoid "X years, 12 months" output
+    if (months === 12) {
+        years += 1;
+        months = 0;
+    }
 
     const result: string[] = [];
 
