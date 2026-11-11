@@ -49,6 +49,11 @@
   --text-color-primary-2: var(--app-white);
 }
 
+// Black single-color skill icons -> white in dark theme
+.dark .theme-adaptive-icon {
+  filter: invert(1);
+}
+
 *,
 *::before,
 *::after {
