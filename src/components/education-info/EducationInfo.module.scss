@@ -3,12 +3,13 @@
 .education {
   font-weight: var(--font-weight-bolder);
 
+  .degree,
   .prof,
   .college,
   .graduateYear {
     font-size: var(--font-size-md-bigger);
     width: 75%;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 
   .prof {

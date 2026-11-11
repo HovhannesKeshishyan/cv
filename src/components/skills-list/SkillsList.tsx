@@ -5,11 +5,14 @@ import {SKILLS_LIST} from "@/data/skillsList";
 
 export const SkillsList: FC = () => {
     const skillsList = useMemo(() => {
-        return SKILLS_LIST.map((skill) => {
+        return SKILLS_LIST.filter((skill) => !skill.hide).map((skill) => {
             return (
                 <li className={styles.skillItem} key={skill.name}>
-                    <a href={skill.officialPageUrl} target="_blank" rel="noopener noreferrer">
-                        <ImgSvgIcon iconName={skill.icon} alt={`${skill.name} icon`}/>
+                    <a className={styles.skillContent}
+                       href={skill.officialPageUrl}
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <ImgSvgIcon iconName={skill.icon}/>
                         <h3 className={styles.skillName}>{skill.name}</h3>
                     </a>
                 </li>
