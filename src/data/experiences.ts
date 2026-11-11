@@ -5,22 +5,28 @@ export const EXPERIENCES: Experience[] = [
         id: "egs",
         company: "Energize Global Services Armenia",
         duration: {from: "2023-04-17", to: "Present"},
-        role: "Frontend developer",
+        role: "Senior Frontend Developer",
         technologies: ["Vue", "JavaScript", "TypeScript", "AEM", "SCSS", "LESS"],
         projects: [
             {
                 id: 1,
-                description: `Architecting high-performance fintech platforms using Vue.js, JavaScript, TypeScript and AEM,
-                 with a specific focus on performance optimization and scalable component design.`
+                description: `Architect and develop high-performance fintech platforms using Vue.js, TypeScript,
+                JavaScript, and Adobe Experience Manager (AEM), with a focus on scalable and reusable component architecture.`
             },
             {
                 id: 2,
-                description: `Implementation of advanced web accessibility (a11y) features, including ARIA management, 
-                keyboard navigation protocols, and focus-visible styling to meet strict WCAG standards.`
+                description: `Implement WCAG 2.1 accessibility across complex applications, including ARIA patterns,
+                keyboard navigation, focus management, and focus-visible behavior.`
             },
             {
                 id: 3,
-                description: `Engineering complex UI logic and maintained high-quality frontend architecture.`
+                description: `Own complex frontend architecture and UI logic across multiple product teams,
+                establishing reusable patterns and maintainable component structures.`
+            },
+            {
+                id: 4,
+                description: `Design and develop responsive, cross-browser experiences while maintaining
+                performance and architectural quality.`
             }
         ]
     },
@@ -33,16 +39,23 @@ export const EXPERIENCES: Experience[] = [
         projects: [
             {
                 id: 1,
-                description: "Architected the frontend for a certification training platform, building exam flows and progress tracking."
+                description: `Architected and developed the frontend for a certification training platform,
+                delivering complex exam flows, dynamic question rendering, and progress-tracking functionality.`
             },
             {
                 id: 2,
-                description: `Built the time-logging and invoice generation UI, 
-                integrating with backend APIs to support employer reporting workflows.`
+                description: `Developed time-logging and invoice-generation workflows integrated with REST APIs,
+                supporting employer reporting and administrative processes.`
             },
             {
                 id: 3,
-                description: "Developed a multi-party document signing flow with real-time negotiation state management."
+                description: `Developed a multi-party document-signing workflow with real-time negotiation
+                state management and complex state synchronization.`
+            },
+            {
+                id: 4,
+                description: `Built reusable components and application patterns across multiple product features
+                using React, Vue.js, and Angular.`
             }
         ]
     },
@@ -55,9 +68,13 @@ export const EXPERIENCES: Experience[] = [
         projects: [
             {
                 id: 1,
-                description: `Owned the full frontend of an educational math platform 
-                for children in grades 1–4, including UI architecture, game 
-                logic, and cross-browser compatibility.`
+                description: `Owned the end-to-end frontend architecture of an interactive educational platform
+                for students in grades 1-4, including UI architecture, interactive game logic, and cross-browser compatibility.`
+            },
+            {
+                id: 2,
+                description: `Built reusable UI components and animation systems shared across learning modules,
+                improving consistency across the platform.`
             }
         ]
     },
