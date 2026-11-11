@@ -1,14 +1,15 @@
 import type {Metadata, Viewport} from "next";
 import type {ReactNode} from "react";
 import {ThemeProvider} from "@/components/theme-provider/theme-provider";
+import {Analytics} from "@vercel/analytics/next";
 
-import { Roboto } from "next/font/google";
+import {Roboto} from "next/font/google";
 import "./globals.scss";
 
 const roboto = Roboto({
-  weight: ["400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  display: "swap"
+    weight: ["400", "500", "600", "700", "800", "900"],
+    subsets: ["latin"],
+    display: "swap"
 })
 
 import {siteUrl, metaDescription, metaTitle} from "@/constants/metadata";
@@ -62,6 +63,7 @@ export default function RootLayout({children}: Props) {
                 {children}
             </div>
         </ThemeProvider>
+        <Analytics/>
         </body>
         </html>
     );
