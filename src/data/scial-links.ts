@@ -13,12 +13,12 @@ export const SOCIAL_LINKS: SocialMedia[] = [
     },
     {
         name: "github",
-        href: "https://github.com/HovhannesKeshishyan",
+        href: "https://github.com/hovhanneskeshishyan",
         icon: FaGithub
     },
     {
         name: "facebook",
-        href: "https://www.facebook.com/HovoKeshishyan",
+        href: "https://www.facebook.com/hovokeshishyan",
         icon: FaFacebook
     },
     {
